@@ -6,11 +6,12 @@
 
   .location {
     font-family: 'hvd-peace', 'Impact', sans-serif;
-    font-size: 5em;
+    font-size: 11em;
     line-height: .9;
     max-width: 6em;
     margin: .25em 0 .5em .25em;
     position: relative;
+    margin-top: 0;
     color: yellow;
     mix-blend-mode: exclusion;
   }
@@ -31,9 +32,14 @@
 
   .date {
     position: absolute;
-    @extend %font--base;
-    top: 0;
-    right: 0;
+    top: 1em;
+    right: 1em;
+    font-family: hvd-peace,Impact,sans-serif;
+    font-size: 5em;
+    mix-blend-mode: difference;
+    max-width: 7em;
+    color: violet;
+
   }
 
   .poem {
@@ -41,7 +47,7 @@
     column-count: 2;
     max-width: 600px;
     padding: .5em 2em 0 2em;
-    margin: -1em 3em;
+    margin: -8em 3em;
     position: relative;
     display: inline-block;
 

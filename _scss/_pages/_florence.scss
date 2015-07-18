@@ -1,0 +1,76 @@
+.florence--page {
+  padding: 3em 3em 10em;
+  background: $color--offwhite;
+  overflow: hidden;
+
+  .title {
+    font-family: 'great-vibes', fantasy;
+    font-size: 10em;
+    margin: 0;
+    text-align: center;
+    color: $color--dimgrey;
+  }
+
+  .subtitle {
+    font-family: 'great-vibes', fantasy;
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    margin: -1.5em 3em 1em;
+    width: 100%;
+    color: $color--purple;
+  }
+
+  .poem-one h2, .poem-two h2{
+    margin: 1em;
+    font-size: 4em;
+    font-family:  'great-vibes', fantasy;
+    color: $color--purple;
+  }
+
+  .poem-one,
+  .poem-two {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.4em;
+    line-height: 1.6;
+    max-width: 28em;
+    margin-right: 2em;
+  }
+
+  .poem-one {
+    h2 { float: left; }
+    float: left;
+  }
+
+  .poem-two {
+    h2 { float: right; }
+    float: right;
+  }
+
+  br {
+    line-height: 2em;
+  }
+
+  .image-gallery {
+    float: left;
+    max-width: 600px;
+    display: block;
+
+    img {
+      mix-blend-mode: multiply;
+      width: 70%;
+    }
+
+    .ponte-vecchio {
+      margin: -13em 21em;
+    }
+
+    .top-of-city {
+      margin: 3em;
+    }
+
+    .from-duomo {
+
+    }
+  }
+}

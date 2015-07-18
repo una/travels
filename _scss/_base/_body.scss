@@ -1,0 +1,16 @@
+body {
+  @extend %font--base;
+}
+
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 10em;
+}

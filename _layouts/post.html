@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{page.slug}}--page">
+  <body>
+    <div class="wrapper {{page.slug}}--page">
     <main role="main">
       {{content}}
     </main>
     {% include footer.html %}
+    </div>
   </body>
 </html>
