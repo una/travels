@@ -2,7 +2,7 @@
 
   background: url('../../img/berlin/tresor.jpg');
   background-blend-mode: multiply;
-  background-size: cover;
+  background-size: contain;
 
   .location {
     font-family: 'hvd-peace', 'Impact', sans-serif;
@@ -62,18 +62,6 @@
       position: absolute;
       top: 3.5em;
       right: 2em;
-    }
-
-    &:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: #cf7fff;
-      mix-blend-mode: multiply;
-      position: absolute;
-      top: -1em;
-      left: 4em;
     }
   }
 

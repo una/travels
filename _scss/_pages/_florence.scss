@@ -4,7 +4,7 @@
   overflow: hidden;
 
   .title {
-    font-family: 'great-vibes', fantasy;
+    font-family: 'League Script', cursive;
     font-size: 10em;
     margin: 0;
     text-align: center;
@@ -12,7 +12,7 @@
   }
 
   .subtitle {
-    font-family: 'great-vibes', fantasy;
+    font-family: 'League Script', cursive;
     font-size: 2em;
     text-align: center;
     display: block;
@@ -24,7 +24,7 @@
   .poem-one h2, .poem-two h2{
     margin: 1em;
     font-size: 4em;
-    font-family:  'great-vibes', fantasy;
+    font-family: 'League Script', cursive;
     color: $color--purple;
   }
 
@@ -33,6 +33,7 @@
     font-family: 'EB Garamond', serif;
     font-size: 1.4em;
     line-height: 1.6;
+    width: 50%;
     max-width: 28em;
     margin-right: 2em;
   }
@@ -62,11 +63,11 @@
     }
 
     .ponte-vecchio {
-      margin: -13em 21em;
+      margin: -30% 40%;
     }
 
     .top-of-city {
-      margin: 3em;
+      margin: 5% 10%;
     }
 
     .from-duomo {
