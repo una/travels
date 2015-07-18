@@ -10,7 +10,7 @@ title: Archive
   {% for post in site.posts %}
     {% if post.publish %}
       <li class="post-list__item {{ post.slug }}">
-      <a class="post-list__link" href="{{ post.url }}">
+      <a class="post-list__link" href="{{site.baseurl}}/{{ post.url }}">
         <div class="post-list__visual">
           <img class="post-list__img" src="{{ site.baseurl }}/img/covers/{{ post.img }}" alt="{{ post.city }}">
           <div class="post-list__img-blender"></div>

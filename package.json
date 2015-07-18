@@ -1,5 +1,5 @@
 {
-  "name": "this-beautiful-world",
+  "name": "travels",
   "version": "0.0.0",
   "description": "Life is short. I'm just trying to make the best of it. This is an adventure story",
   "main": "gulpfile.js",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/una/this-beautiful-world.git"
+    "url": "https://github.com/una/travels.git"
   },
   "keywords": [
     "jekyll",
@@ -37,7 +37,7 @@
     "travel"
   ],
   "bugs": {
-    "url": "https://github.com/una/this-beautiful-world/issues"
+    "url": "https://github.com/una/travels/issues"
   },
-  "homepage": "http://una.github.io/this-beautiful-world"
+  "homepage": "http://una.github.io/travels"
 }
