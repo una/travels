@@ -3,8 +3,8 @@ layout: default
 title: Archive
 ---
 
-<h1>This Beautiful World</h1>
-<p>Life is short. I'm just trying to make the best of it.</p>
+<h1 class="title">This Beautiful World</h1>
+<p class="subtitle">Life is short. I'm just trying to make the best of it.</p>
 
 <ul class="post-list">
   {% for post in site.posts %}
@@ -17,8 +17,8 @@ title: Archive
 
           <h2 class="post-list__loc" class="post-title"> <span class="post-list__loc--city">{{ post.city }}</span><br><span class="post-list__loc--country">{{ post.country }}</span></h2>
         </div>
-        <span class="post-list__date" {{ post.date | date: "%B %Y" }}</span>
-      </a>
+        </a>
+      <span class="post-list__date"> {{ post.date | date: "%B %Y" }}</span>
     </li>
     {% endif %}
   {% endfor %}

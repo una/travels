@@ -1,6 +1,26 @@
 $box-shadow--size: 25px;
 
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.title {
+  margin: 2em 0 0;
+  font-size: 3em;
+}
+
 .post-list {
+  width: 100%;
+  margin: 6em auto;
+  max-width: 74em;
+
+  li {
+    width: 260px;
+    display: inline-block;
+    margin: 0 1em;
+  }
+
   &__visual {
     height: 200px;
     position: relative;
@@ -48,5 +68,11 @@ $box-shadow--size: 25px;
       // bottom: -.15em;
       line-height: .85;
     }
+  }
+
+  &__date {
+    color: $color--purple;
+    text-align: center;
+    display: block;
   }
 }

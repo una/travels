@@ -11,3 +11,8 @@
 // temporary, eventually these should all be individual CSS files:
 @import '_pages/index';
 @import '_pages/berlin';
+
+// im tired, but make a base.scss
+body {
+  @extend %font--base;
+}
