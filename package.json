@@ -1,5 +1,5 @@
 {
-  "name": "travels",
+  "name": "this-beautiful-world",
   "version": "0.0.0",
   "description": "Life is short. I'm just trying to make the best of it. This is an adventure story",
   "main": "gulpfile.js",
@@ -9,25 +9,25 @@
   "author": "Una Kravets",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^1.9.1",
-    "gulp": "^3.8.10",
-    "gulp-autoprefixer": "^1.0.0",
-    "gulp-csscomb": "^3.0.3",
-    "gulp-exit": "0.0.2",
-    "gulp-gh-pages": "^0.4.0",
-    "gulp-imagemin": "^2.1.0",
-    "gulp-minify-css": "^0.3.13",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^1.3.2",
-    "gulp-scss-lint": "^0.1.6",
-    "imagemin-pngquant": "^4.0.0",
-    "ngrok": "^0.1.98",
-    "psi": "^0.1.6",
-    "run-sequence": "^1.0.2"
+    "browser-sync": "^2.7.13",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-csscomb": "*",
+    "gulp-exit": "*",
+    "gulp-gh-pages": "^0.5.2",
+    "gulp-imagemin": "*",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-rename": "*",
+    "gulp-sass": "^2.0.4",
+    "gulp-scss-lint": "^0.2.1",
+    "imagemin-pngquant": "*",
+    "ngrok": "*",
+    "psi": "^1.0.6",
+    "run-sequence": "*"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/una/travels.git"
+    "url": "https://github.com/una/this-beautiful-world.git"
   },
   "keywords": [
     "jekyll",
@@ -37,7 +37,7 @@
     "travel"
   ],
   "bugs": {
-    "url": "https://github.com/una/travels/issues"
+    "url": "https://github.com/una/this-beautiful-world/issues"
   },
-  "homepage": "http://una.github.io/travels"
+  "homepage": "http://una.github.io/this-beautiful-world"
 }

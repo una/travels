@@ -51,6 +51,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
+
+ // should exclude pages (they will compile individually)
 gulp.task('sass', function () {
     return gulp.src('_scss/main.scss')
         .pipe(sass({
@@ -61,7 +63,7 @@ gulp.task('sass', function () {
         .pipe(minifycss())
         .pipe(rename('main.min.css'))
         .pipe(gulp.dest('_includes'))
-        .pipe(browserSync.reload({stream:true}))
+        .pipe(browserSync.reload({stream:true}));
 });
 
 /**
@@ -76,13 +78,13 @@ gulp.task("deploy", ["jekyll-build"], function () {
  * Minify Images
  */
 gulp.task('imagemin', function () {
-    return gulp.src('images/*')
+    return gulp.src('img/**/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('_site/images'));
+        .pipe(gulp.dest('_site/img'));
 });
 
 /**
@@ -163,7 +165,7 @@ gulp.task('psi', ['psi-seq'], function() {
 gulp.task('watch', function () {
     gulp.watch('_scss/**/*.scss', ['sass', 'jekyll-rebuild']);
     gulp.watch(['index.html', 'archive.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*', 'archive/*', 'speaking/*'], ['jekyll-rebuild']);
-    gulp.watch(['images/*'], ['imagemin'])
+    //gulp.watch(['img/*/**'], ['imagemin'])
 });
 
 /**

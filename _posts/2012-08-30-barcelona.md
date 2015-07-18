@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Barcelona
+slug: barcelona
 city: Barcelona
 country: Spain
 permalink: /barcelona

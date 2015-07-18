@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Amsterdam
+slug: amsterdam
 city: Amsterdam
 country: Netherlands
 permalink: /amsterdam
