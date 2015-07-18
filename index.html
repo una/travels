@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Hello World</title>
-</head>
-<body>
-<style>
-h1 {
-  font-family: "sail", fantasy;
-}
+---
+layout: default
+title: Archive
+---
 
-</style>
 <h1>This Beautiful World</h1>
+
+<ul class="post-list--archive">
+  {% for post in site.posts %}
+    {% if post.publish %}
+      <li class="{%if post.link-out%}link-out{%endif%}">
+      <a href="{{ post.url }}">
+        <img src="img/{{ post.img }}" alt="{{ post.city }}">
+        <h2 class="post-title"> {{ post.city }}, {{ post.country }}  </h2>
+        <span class="post-meta">{{ post.date | date: "%B %Y" }}</span>
+      </a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 <script src="//use.typekit.net/eqm0qtj.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Barcelona
 city: Barcelona
 country: Spain

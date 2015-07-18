@@ -1,9 +1,9 @@
 name: This Beautiful World
 description: A series of adventures and vignettes
-url: http://una.github.io/travels
+url: http://una.github.io/this-beautiful-world
 markdown: redcarpet
 highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "source_files"]
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 twitter_username: una
