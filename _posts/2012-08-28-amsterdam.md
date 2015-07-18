@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 slug: amsterdam
 city: Amsterdam
 country: Netherlands

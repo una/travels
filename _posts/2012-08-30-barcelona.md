@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 slug: barcelona
 city: Barcelona
 country: Spain
