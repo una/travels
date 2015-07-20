@@ -1,3 +1,5 @@
+@import '../shared';
+
 .florence--page {
   padding: 3em 3em 10em;
   background: $color--offwhite;
@@ -26,6 +28,8 @@
     font-size: 4em;
     font-family: 'League Script', cursive;
     color: $color--purple;
+    background-color: rgb(236, 236, 176);
+    border-radius: 50%;
   }
 
   .poem-one,
@@ -36,6 +40,12 @@
     width: 50%;
     max-width: 28em;
     margin-right: 2em;
+
+    p::first-line {
+      margin-top: 2.5em;
+      color: $color--purple;
+      background: mix($color--offwhite, rgb(236, 236, 176), 50%);
+    }
   }
 
   .poem-one {
@@ -49,7 +59,7 @@
   }
 
   br {
-    line-height: 2em;
+    line-height: 2.5em;
   }
 
   .image-gallery {

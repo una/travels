@@ -54,14 +54,11 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
  // should exclude pages (they will compile individually)
 gulp.task('sass', function () {
-    return gulp.src('_scss/main.scss')
-        .pipe(sass({
-            includePaths: ['scss'],
-            onError: browserSync.notify
-        }))
+    return gulp.src('_scss/pages/*.scss')
+        .pipe(sass())
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(minifycss())
-        .pipe(rename('main.min.css'))
+        // .pipe(rename('main.min.css'))
         .pipe(gulp.dest('_includes'))
         .pipe(browserSync.reload({stream:true}));
 });

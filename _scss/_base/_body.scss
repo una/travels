@@ -13,3 +13,8 @@ body {
   min-height: 100%;
   position: relative;
 }
+
+::selection {
+  color: white;
+  background-color: black;
+}

@@ -70,3 +70,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll-redirect-from
+
+BUNDLED WITH
+   1.10.5

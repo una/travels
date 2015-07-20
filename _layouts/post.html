@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
+
+  <style>
+      {% include {{page.slug}}.css %}
+  </style>
+
   <body>
     <div class="wrapper {{page.slug}}--page">
     <main role="main">
