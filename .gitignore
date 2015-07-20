@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 source_files/
 Gemfile.lock
+.publish
