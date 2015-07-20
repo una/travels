@@ -1,4 +1,14 @@
 <footer role="contentinfo">
+
+  <p>View another city:</p>
+  <ul class="all-posts">
+  {% for post in site.posts %}
+    {% if post.publish %}
+      <li><a href="{{post.url}}">{{post.city}}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+
   <small>Please note, this site works best on the lastest version of Chrome. I know. I don't care.</small>
 	<p>&copy; <a href="http://una.im" target="_blank">Una Kravets</a> 2015. Made with love. View <a href="http://github.com/una/travels" target="_blank">source</a>.
 	</p>
