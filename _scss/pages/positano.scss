@@ -6,6 +6,7 @@
   .city, .date {
     font-family: 'sail';
     text-align: right;
+    color: rgb(197, 218, 255);
   }
 
   .city {
@@ -19,11 +20,12 @@
 
   .container {
     // width: 800px;
-    background: url('../../img/positano/positano.jpg');
+    background: url('../../img/positano/positano.jpg'), linear-gradient(top,rgba(234, 107, 132, 0.2) 0,rgba(91, 86, 148, 0.3) 100%);
+    background-blend-mode: multiply;
     // this ensures that the center diagonal retains
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 50% 0;
     width: 100%;
     height: auto;
     display: block;
