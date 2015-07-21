@@ -18,10 +18,14 @@ title: Archive
           <img class="post-list__img" src="{{ site.baseurl }}/img/covers/{{ post.img }}" alt="{{ post.city }}">
           <div class="post-list__img-blender"></div>
 
-          <h2 class="post-list__loc" class="post-title"> <span class="post-list__loc--city">{{ post.city }}</span><br><span class="post-list__loc--country">{{ post.country }}</span></h2>
+          <!-- <h2 class="post-list__loc" class="post-title"> <span class="post-list__loc--city">{{ post.city }}</span><br><span class="post-list__loc--country">{{ post.country }}</span></h2> -->
         </div>
         </a>
-      <span class="post-list__date"> {{ post.date | date: "%B %Y" }}</span>
+        <h2 class="post-list__loc" class="post-title">
+          <span class="post-list__loc--city">{{ post.city }}</span>,
+          <span class="post-list__loc--country">{{ post.country }}</span>
+        </h2>
+        <h3 class="post-list__date"> {{ post.date | date: "%B %Y" }}</span>
     </li>
     {% endif %}
   {% endfor %}

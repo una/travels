@@ -7,6 +7,10 @@ footer {
   left:0;
   background: white;
 
+  a {
+    color: $color--purple;
+  }
+
   small {
     font-size: 80%;
     margin-top: 2em;
