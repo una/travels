@@ -1,1 +1,40 @@
 @import '../shared';
+
+.rome--page {
+  font-family: 'EB Serif', serif;
+  background: url('../../img/rome/rome.jpg');
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 140vh;
+  display: block;
+
+  .title-info {
+    text-align: right;
+    color: $color--purple;
+  }
+
+  .poem {
+    p:first-child {
+      font-size: 1.25em;
+    }
+
+    line-height: 1.4;
+
+    p {
+      &:first-letter {
+        font-size: 1.5em;
+        color: $color--purple;
+      }
+
+      margin-bottom: 1em;
+    }
+  }
+
+  .content-area {
+    background-color: wheat;
+    padding: 1em 2em;
+    max-width: 24.5em;
+  }
+}

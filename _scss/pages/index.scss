@@ -8,14 +8,14 @@ $box-shadow--size: 25px;
 }
 
 .title {
-  margin: 2em 0 0;
+  margin: 1em 0 0;
   font-size: 3em;
 }
 
 .post-list {
   width: 100%;
-  margin: 6em auto;
-  max-width: 74em;
+  margin: 3em auto;
+  // figure out a way to center these all
 
   li {
     width: 260px;
