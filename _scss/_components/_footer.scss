@@ -17,12 +17,8 @@ footer {
     li {
       display: inline-block;
 
-      &:after {
+      + :before {
         content: ' | ';
-      }
-
-      &:last-child:after {
-        content: '';
       }
     }
   }
