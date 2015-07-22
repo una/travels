@@ -1,9 +1,19 @@
 @import '../shared';
 
 .florence--page {
-  padding: 3em 3em 10em;
+  padding: 3em 3em 15em;
   background: $color--offwhite;
-  overflow: hidden;
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  @include breakpoint(lg) {
+      align-items: center;
+      justify-content: center;
+    }
 
   .title {
     font-family: 'League Script', cursive;
@@ -23,31 +33,6 @@
     color: $color--purple;
   }
 
-  .poem-one h2, .poem-two h2{
-    margin: 1em;
-    font-size: 4em;
-    font-family: 'League Script', cursive;
-    color: $color--purple;
-    background-color: rgb(236, 236, 176);
-    border-radius: 50%;
-  }
-
-  .poem-one,
-  .poem-two {
-    font-family: 'EB Garamond', serif;
-    font-size: 1.4em;
-    line-height: 1.6;
-    width: 50%;
-    max-width: 28em;
-    margin-right: 2em;
-
-    p::first-line {
-      margin-top: 2.5em;
-      color: $color--purple;
-      background: mix($color--offwhite, rgb(236, 236, 176), 50%);
-    }
-  }
-
   .poem-one {
     h2 { float: left; }
     float: left;
@@ -56,16 +41,64 @@
   .poem-two {
     h2 { float: right; }
     float: right;
+    width: 45%;
+    padding-left: 1em;
   }
 
   br {
     line-height: 2.5em;
   }
 
+  .poem-one h2, .poem-two h2{
+    margin: 1em;
+    font-size: 4em;
+    font-family: 'League Script', cursive;
+    color: $color--purple;
+    background-color: rgb(236, 236, 176);
+    border-radius: 50%;
+
+    @include breakpoint(lg) {
+      // margin: 1em 40%;
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .poem-one,
+  .poem-two {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.4em;
+    line-height: 1.6;
+    // max-width: 28em;
+    margin-right: 2em;
+    width: 50%;
+
+    @include breakpoint(lg) {
+      max-width: 24em;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0;
+      clear: both;
+    }
+
+    p::first-line {
+      margin-top: 2.5em;
+      color: $color--purple;
+      background: mix($color--offwhite, rgb(236, 236, 176), 50%);
+    }
+  }
+
   .image-gallery {
     float: left;
     max-width: 600px;
     display: block;
+    width: 45%;
+    padding-left: 2em;
+
+    @include breakpoint(lg) {
+      margin-top: 4em;
+      width: 100%;
+    }
 
     img {
       mix-blend-mode: multiply;

@@ -22,12 +22,16 @@
     @include breakpoint(md) {
       position: relative;
       transform: translateX(0);
+      margin-bottom: -.5em;
     }
   }
 
   .title-info {
     text-align: right;
     color: $color--purple;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-bottom: 2em;
 
     @include breakpoint(md) {
       text-align: left

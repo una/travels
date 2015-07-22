@@ -14,19 +14,21 @@ $box-shadow--size: 25px;
 
 .post-list {
   width: 100%;
-  margin: 3em auto;
-  // figure out a way to center these all
+  max-width: 1200px;
+  margin: 2em auto;
+  display: flex;
+  flex-flow: row wrap;
 
   li {
+    flex: auto;
     width: 260px;
-    display: inline-block;
-    margin: 0 1em;
+    margin: 2em .5em;
   }
 
   &__visual {
     height: 200px;
     position: relative;
-    margin: $box-shadow--size + 5px;
+    margin: $box-shadow--size + 5px auto;
     width: 200px;
     box-shadow:
       0 0 0 ($box-shadow--size - 5px) $color--lightgrey,
@@ -45,10 +47,10 @@ $box-shadow--size: 25px;
       top: 0;
       left: 0;
 
-      .berlin & {
-        background: linear-gradient(left, rgb(148, 38, 142) 0%, rgba(200, 200, 200, 0) 100%);
-        mix-blend-mode: multiply;
-      }
+      // .berlin & {
+      //   background: linear-gradient(left, rgb(148, 38, 142) 0%, rgba(200, 200, 200, 0) 100%);
+      //   mix-blend-mode: multiply;
+      // }
     }
   }
 
