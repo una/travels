@@ -1,73 +1,48 @@
 @import '../shared';
 
-.berlin--page {
+.krakow--page {
+  min-height: 100vh;
 
-  background: url('../../img/berlin/tresor.jpg');
-  background-blend-mode: multiply;
-  background-size: contain;
-
-  .location {
-    font-family: 'hvd-peace', 'Impact', sans-serif;
-    font-size: 11em;
-    line-height: .9;
-    max-width: 6em;
-    margin: .25em 0 .5em .25em;
-    position: relative;
-    margin-top: 0;
-    color: yellow;
-    mix-blend-mode: exclusion;
-  }
-
-  mark {
-    background: black;
-    color: white;
-  }
-
-  .wall{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 65%;
-    mix-blend-mode: screen;
-  }
-
-  .date {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    font-family: hvd-peace,Impact,sans-serif;
-    font-size: 5em;
-    mix-blend-mode: difference;
-    max-width: 7em;
-    color: violet;
-
+  .poem-area {
+    max-width: 40%;
+    display: block;
+    padding: 2em;
   }
 
   .poem {
-    @extend %font--base;
-    column-count: 2;
-    max-width: 600px;
-    padding: .5em 2em 0 2em;
-    margin: -8em 3em;
-    position: relative;
-    display: inline-block;
+    font-size: 1.5em;
+    font-family: serif;
+    max-width: 24em;
+    margin: 0 auto;
+    float: left;
 
-    &:before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: red;
-      opacity: .5;
-      mix-blend-mode: multiply;
-      position: absolute;
-      top: 3.5em;
-      right: 2em;
-    }
   }
 
-  br {
-    line-height: 2;
+  .img-area {
+    max-width: 50%;
+    float: left;
+
+    .img-one {
+      width: 400px;
+      height: 600px;
+      background: url('../../img/krakow/street.jpg');
+      background-size: cover;
+      margin: -2em 0 0 0;
+      // filter: grayscale(1);
+      transform: rotate(-2deg);
+    }
+
+    .img-two {
+      width: 500px;
+      height: 600px;
+      position: absolute;
+      z-index: -1;
+      background: url('../../img/krakow/street.jpg');
+      background-size: cover;
+      filter: grayscale(1);
+      transform: rotate(8deg);
+      top: 2em;
+      right: 0;
+    }
   }
 }
