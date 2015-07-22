@@ -39,6 +39,8 @@
   }
 
   .poem-two {
+    margin-left: 50%;
+
     h2 { float: right; }
     float: right;
     width: 45%;
@@ -58,7 +60,6 @@
     border-radius: 50%;
 
     @include breakpoint(lg) {
-      // margin: 1em 40%;
       text-align: center;
       float: none;
     }

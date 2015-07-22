@@ -1,1 +1,8 @@
 @import '../shared';
+
+.vienna--page {
+  height: 140vh;
+  width: 100%;
+  background: url('../../img/vienna/vienna.jpg');
+  filter: sepia(.5);
+}
