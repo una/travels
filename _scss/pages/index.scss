@@ -30,14 +30,15 @@ $box-shadow--size: 25px;
     position: relative;
     margin: $box-shadow--size + 5px auto;
     width: 200px;
+    overflow: hidden;
     box-shadow:
       0 0 0 ($box-shadow--size - 5px) $color--lightgrey,
       0 0 0 $box-shadow--size $color--darkerpurple;
   }
 
   &__img {
-    height: 100%;
-    width: 100%;
+      height: 100%;
+  max-width: 200%;
 
     &-blender {
       width: 100%;

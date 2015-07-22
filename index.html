@@ -11,14 +11,12 @@ title: Archive
 
 <ul class="post-list">
   {% for post in site.posts %}
-    {% if post.publish %}
+    <!-- {# if post.publish #} -->
       <li class="post-list__item {{ post.slug }}">
       <a class="post-list__link" href="{{ post.url }}">
         <div class="post-list__visual">
           <img class="post-list__img" src="{{ site.baseurl }}/img/covers/{{ post.slug }}.jpg" alt="{{ post.city }}">
-          <div class="post-list__img-blender"></div>
-
-          <!-- <h2 class="post-list__loc" class="post-title"> <span class="post-list__loc--city">{{ post.city }}</span><br><span class="post-list__loc--country">{{ post.country }}</span></h2> -->
+          <!-- <div class="post-list__img-blender"></div> -->
         </div>
         </a>
         <h2 class="post-list__loc" class="post-title">
@@ -27,6 +25,6 @@ title: Archive
         </h2>
         <h3 class="post-list__date"> {{ post.date | date: "%B %Y" }}</span>
     </li>
-    {% endif %}
+    <!-- {# endif #} -->
   {% endfor %}
 </ul>
