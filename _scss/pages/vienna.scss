@@ -1,8 +1,27 @@
 @import '../shared';
 
 .vienna--page {
+  font-family: 'Linden Hill', serif;
+  color: $color--darkerpurple;
   height: 140vh;
+  font-size: 1.3em;
+  line-height: 1.4;
+  padding: 2em;
   width: 100%;
   background: url('../../img/vienna/vienna.jpg');
   filter: sepia(.5);
+
+  .poem {
+    margin-left: 60%
+  }
+
+  h1,
+  h2 {
+    font-size: 1.4em;
+    font-weight: 900;
+  }
+
+  br {
+    line-height: 1;
+  }
 }

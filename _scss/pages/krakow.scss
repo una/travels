@@ -3,19 +3,27 @@
 .krakow--page {
   min-height: 100vh;
 
+  h1,
+  h2 {
+    font-family: 'Gravitas One', cursive;
+    font-size: 2em;
+    color: #D9111C;
+  }
+
   .poem-area {
     max-width: 40%;
     display: block;
     padding: 2em;
+    font-family: 'Source Serif Pro', serif;
   }
 
   .poem {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: serif;
     max-width: 24em;
     margin: 0 auto;
     float: left;
-
+    line-height: 1.4;
   }
 
   .img-area {

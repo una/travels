@@ -1,7 +1,8 @@
 @import '../shared';
 
 .rome--page {
-  font-family: 'EB Serif', serif;
+  font-family: 'Alegreya', serif;
+  // font-family: 'Cinzel', serif;
 
   // .rome-img {
   //   background: url('../../img/rome/rome.jpg');
@@ -31,7 +32,7 @@
     color: $color--purple;
     font-style: italic;
     font-size: 1.5em;
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
 
     @include breakpoint(md) {
       text-align: left

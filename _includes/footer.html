@@ -3,9 +3,9 @@
   <p>View another city:</p>
   <ul class="all-posts">
   {% for post in site.posts %}
-    <!-- {# if post.publish #} -->
+    {% if post.publish %}
       <li><a href="{{post.url}}">{{post.city}}</a></li>
-    <!-- {# endif #} -->
+    {% endif %}
   {% endfor %}
   </ul>
 

@@ -7,11 +7,13 @@
   </style>
 
   <body>
-    <div class="wrapper {{page.slug}}--page">
-    <main role="main">
-      {{content}}
-    </main>
-    {% include footer.html %}
+    <div class="wrapper">
+      <div class="{{page.slug}}--page">
+        <main role="main">
+          {{content}}
+        </main>
+      </div>
+      {% include footer.html %}
     </div>
   </body>
 </html>

@@ -11,7 +11,7 @@ title: Archive
 
 <ul class="post-list">
   {% for post in site.posts %}
-    <!-- {# if post.publish #} -->
+    {% if post.publish %}
       <li class="post-list__item {{ post.slug }}">
       <a class="post-list__link" href="{{ post.url }}">
         <div class="post-list__visual">
@@ -25,6 +25,6 @@ title: Archive
         </h2>
         <h3 class="post-list__date"> {{ post.date | date: "%B %Y" }}</span>
     </li>
-    <!-- {# endif #} -->
+    {% endif %}
   {% endfor %}
 </ul>
