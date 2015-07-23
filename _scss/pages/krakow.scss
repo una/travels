@@ -21,7 +21,7 @@
     font-size: 1.2em;
     font-family: serif;
     max-width: 24em;
-    margin: 0 auto;
+    margin: 1em auto;
     float: left;
     line-height: 1.4;
   }
@@ -30,26 +30,28 @@
     max-width: 50%;
     float: left;
 
+    .img-one, .img-two {
+      mix-blend-mode: multiply;
+      background: url('../../img/krakow/street.jpg');
+      background-size: cover;
+    }
+
     .img-one {
       width: 400px;
       height: 600px;
-      background: url('../../img/krakow/street.jpg');
-      background-size: cover;
-      margin: -2em 0 0 0;
+      margin: -4em 6em 0;
       // filter: grayscale(1);
       transform: rotate(-2deg);
     }
 
     .img-two {
       width: 500px;
-      height: 600px;
+      height: 750px;
       position: absolute;
       z-index: -1;
-      background: url('../../img/krakow/street.jpg');
-      background-size: cover;
       filter: grayscale(1);
       transform: rotate(8deg);
-      top: 2em;
+      top: 0em;
       right: 0;
     }
   }
