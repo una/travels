@@ -3,7 +3,7 @@ layout: post
 slug: amsterdam
 city: Amsterdam
 country: Netherlands
-permalink: /travels/amsterdam
+permalink: /amsterdam
 date: '2012-08-30'
 tags:
 - amsterdam

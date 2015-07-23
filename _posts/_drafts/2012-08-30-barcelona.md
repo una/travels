@@ -3,7 +3,7 @@ layout: post
 slug: barcelona
 city: Barcelona
 country: Spain
-permalink: /travels/barcelona
+permalink: /barcelona
 date: '2012-08-30'
 tags:
 - barcelona
