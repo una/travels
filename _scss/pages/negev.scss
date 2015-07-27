@@ -1,1 +1,14 @@
 @import '../shared';
+
+
+.negev--page {
+  min-height: 100vh;
+  background: url('../../img/negev/sunrise.jpg');
+  background-size: cover;
+
+  p {
+    background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

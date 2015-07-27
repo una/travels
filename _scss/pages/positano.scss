@@ -5,6 +5,9 @@
     font-family: 'sail';
     text-align: right;
     color: rgb(197, 218, 255);
+    background: linear-gradient(top, #fefbf6 0%, #f1da36 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .city {

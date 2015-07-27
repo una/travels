@@ -9,3 +9,8 @@ A Web Expriment && My Adventure Stories
 
 ### Florence
   - Typefaces: League Script, EB Serif
+
+## Ideas:
+
+- Austin (SXSW concert): color changing background image to reflect lights from show
+- Melbourne: gifs shifting or lights dancing on the page

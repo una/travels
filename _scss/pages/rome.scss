@@ -1,18 +1,9 @@
 @import '../shared';
 
+// IDEA: Flourishy <hr>'s or the space between paragraphs
+
 .rome--page {
   font-family: 'Alegreya', serif;
-  // font-family: 'Cinzel', serif;
-
-  // .rome-img {
-  //   background: url('../../img/rome/rome.jpg');
-  //   background-size: contain;
-  //   background-position: 50% 0;
-  //   background-repeat: no-repeat;
-  //   width: 100%;
-  //   min-height: 140vh;
-  //   display: block;
-  // }
 
   .rome-bg {
     position: absolute;
@@ -45,11 +36,14 @@
     }
 
     line-height: 1.4;
+    color: #422012;
 
     p {
       &:first-letter {
         font-size: 1.5em;
         color: $color--purple;
+        margin-left: 1em;
+        line-height: 0;
       }
 
       margin-bottom: 1em;
