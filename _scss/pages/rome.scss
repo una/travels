@@ -37,6 +37,7 @@
 
     line-height: 1.4;
     color: #422012;
+    margin-top: 1em;
 
     p {
       &:first-letter {
@@ -47,6 +48,26 @@
       }
 
       margin-bottom: 1em;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 4px double rgba($color--purple, .5);
+    text-align: center;
+    outline: none;
+    width: 50%;
+    margin-top: 2em;
+
+    &:after {
+      content: '§';
+      display: inline-block;
+      position: relative;
+      top: -.8em;
+      padding: 0 .8em;
+      background: wheat;
+      color: $color--purple;
+      transform: rotate(60deg);
     }
   }
 

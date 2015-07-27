@@ -18,11 +18,15 @@ $box-shadow--size: 25px;
   margin: 2em auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   li {
     flex: auto;
     width: 260px;
     margin: 2em .5em;
+    justify-content: flex-start;
+  align-items: flex-start;
   }
 
   &__visual {
