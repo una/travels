@@ -13,6 +13,12 @@ A Web Expriment && My Adventure Stories
 ### Rome
  - Typefaces: Alegreya
 
+### Positano
+ - Typefaces: Oldenburg
+
+### Washington State
+ - Typefaces: Berylium, Bushcraft
+
 ## Ideas:
 
 - Austin (SXSW concert): color changing background image to reflect lights from show

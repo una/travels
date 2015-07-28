@@ -1,8 +1,16 @@
 @import '../shared';
 
+@font-face {
+  font-family: 'Oldenburg';
+  src: url('/fonts/Oldenburg-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .positano--page {
   .city, .date {
-    font-family: 'sail';
+    font-family: 'Sail';
     text-align: right;
     color: rgb(197, 218, 255);
     background: linear-gradient(top, #fefbf6 0%, #f1da36 100%);
@@ -36,7 +44,8 @@
   }
 
   .poem {
-    font-family: serif;
+    font-family: 'Oldenburg', serif;
+    color: #645137;
     font-size: 1.2em;
     line-height: 1.6;
     width: 100%;

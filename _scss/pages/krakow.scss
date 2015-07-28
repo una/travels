@@ -1,13 +1,22 @@
 @import '../shared';
 
+@font-face {
+  font-family: 'Abril Fatface';
+  src: url('/fonts/AbrilFatface-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .krakow--page {
   min-height: 100vh;
 
   h1,
   h2 {
-    font-family: 'Gravitas One', cursive;
-    font-size: 2em;
+    font-family: 'Abril Fatface', 'Gravitas One', cursive;
+    font-size: 2.5em;
     color: #D9111C;
+    margin-left: 1.8em;
   }
 
   .poem-area {
