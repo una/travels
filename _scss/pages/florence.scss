@@ -118,4 +118,18 @@
 
     }
   }
+
+  .sketch {
+    background: url('../img/florence/sketch.jpg');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1000px;
+    opacity: 0.25;
+    width: 50%;
+    -webkit-filter: brightness(132%) contrast(117%);
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

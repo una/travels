@@ -1,1 +1,34 @@
 @import '../shared';
+
+.melbourne--page {
+  .poem {
+    max-width: 24em;
+    height: 100%;
+    float: left;
+    // position: absolute;
+  }
+
+  .bottom {
+    margin-top: -1em;
+  }
+
+  .img-area-1 {
+    position: absolute;
+    shape-outside: content-box;
+    top: -10em;
+    right: 0;
+    width: 400px;
+    transform: rotate(-20deg);
+  }
+
+  .img-area-2 {
+    // position: absolute;
+    float: left;
+    shape-outside: content-box;
+    top: -15em;
+    left: 0em;
+    width: 400px;
+    transform: rotate(10deg);
+
+  }
+}
