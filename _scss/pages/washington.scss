@@ -1,1 +1,139 @@
 @import '../shared';
+
+@font-face {
+  font-family: 'Bushcraft';
+  src: url('/fonts/Bushcraft-textured.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Berylium';
+  src: url('/fonts/Berylium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin hexagon($size, $color) {
+  width: $size*2;
+  height: $size*1.1;
+  background: $color;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: $size/-2;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size/2 solid $color;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: $size/-2;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size/2 solid $color;
+  }
+}
+
+
+.washington--page {
+  h1, h2 {
+    font-family: 'Bushcraft';
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-family: 'Berylium';
+    padding: 2em;
+    line-height: 1.5;
+    max-width: 24em;
+    margin: 0 auto;
+  }
+
+  br {
+    clear: both;
+  }
+
+  .img-area {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .poem {
+    color: #686969;
+  }
+
+  .marina {
+    background: url('../img/washington/marina.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    filter:  grayscale(50%) brightness(50%);
+  }
+
+  $wood-color: rgba(white, .75);
+
+  .title-badge {
+    mix-blend-mode: screen;
+    color: black;
+    padding: 2em;
+    width: 80%;
+    position: absolute;
+    margin: -20em auto 0;
+    background:  $wood-color;
+    background-blend-mode: difference;
+    position: relative;
+    box-shadow: 0px 0px 0px 5px black,0px 0px 0px 10px  $wood-color;
+
+    &:before {
+      content: '\2B22';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      font-size: 24em;
+      color: $wood-color;
+      text-align: center;
+      top: -.7em;
+      z-index: -1;
+    }
+
+    &:after {
+      content: '\2B22';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      font-size: 24em;
+      color: $wood-color;
+      text-align: center;
+      top: -.55em;
+      z-index: -1;
+    }
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+  }
+}
+
+section {
+  flex: 1;
+  height: 100%;
+}
