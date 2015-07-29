@@ -9,7 +9,6 @@ tags:
 - melbourne
 - australia
 - 2015
-publish: true
 ---
 
 <div class="img-area-1">

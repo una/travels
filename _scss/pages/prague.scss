@@ -1,1 +1,48 @@
 @import '../shared';
+
+.prague--page {
+  overflow: hidden;
+
+  .diamond {
+  float: left;
+  width: 200px*1.5;
+  height: 200px*1.5;
+  margin: 50px*1.5;
+  transform: rotate(-45deg);
+  overflow: hidden;
+
+    img {
+      width: 300px*1.5;
+      height: 300px*1.5;
+      margin: -50px*1.5;
+      transform: rotate(45deg);
+      max-width: initial;
+    }
+  }
+
+  .poem-section {
+    float: left;
+    clip-path: circle(50%, 50%, 50%);
+    max-width: 300px;
+    margin: 3em;
+  }
+
+  p {
+    float: left;
+    text-align: justify;
+  }
+
+  .wrap-before {
+    shape-outside: circle(50%);
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+
+  .wrap-after {
+    shape-outside: circle(50%);
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+}
