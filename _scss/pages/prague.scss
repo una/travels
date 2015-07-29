@@ -22,27 +22,32 @@
 
   .poem-section {
     float: left;
-    clip-path: circle(50%, 50%, 50%);
-    max-width: 300px;
-    margin: 3em;
+    width: 400px;
+    height: 400px;
+    margin: 25px;
   }
 
   p {
-    float: left;
     text-align: justify;
+    background-color: lightblue;
+    height: 100%;
   }
 
   .wrap-before {
-    shape-outside: circle(50%);
-    float: left;
-    width: 50%;
-    height: 100%;
+      shape-outside: polygon(0 0,0 100%,100% 100%,0 50%,100% 0);
+      float: left;
+      width: 50%;
+      height: 100%;
+      background-color: hotpink;
+      clip-path: polygon(0 0,0 100%,100% 100%,0 50%,100% 0);
   }
 
   .wrap-after {
-    shape-outside: circle(50%);
-    float: right;
-    width: 50%;
-    height: 100%;
+      shape-outside: polygon(100% 0,100% 100%,0% 100%,100% 50%,0% 0);
+      float: right;
+      width: 50%;
+      height: 100%;
+      background-color: hotpink;
+      clip-path: polygon(100% 0,100% 100%,0% 100%,100% 50%,0% 0);
   }
 }
