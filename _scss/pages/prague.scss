@@ -2,6 +2,13 @@
 
 .prague--page {
   overflow: hidden;
+  padding: 2em;
+
+  .metadata {
+    text-align: center;
+    display: block;
+    color: #d08282;
+  }
 
   .diamond {
   float: left;
@@ -29,7 +36,7 @@
 
   p {
     text-align: justify;
-    background-color: lightblue;
+    // background-color: lemonchiffon;
     height: 100%;
     font-family:'Alegreya';
     font-style: italic;
@@ -42,8 +49,8 @@
       float: left;
       width: 50%;
       height: 100%;
-      background-color: hotpink;
-      clip-path: polygon(0 0,0 100%,100% 100%,0 50%,100% 0);
+      // background-color: white;
+      // clip-path: polygon(0 0,0 100%,100% 100%,0 50%,100% 0);
   }
 
   .wrap-after {
@@ -51,7 +58,7 @@
       float: right;
       width: 50%;
       height: 100%;
-      background-color: hotpink;
-      clip-path: polygon(100% 0,100% 100%,0% 100%,100% 50%,0% 0);
+      // background-color: white;
+      // clip-path: polygon(100% 0,100% 100%,0% 100%,100% 50%,0% 0);
   }
 }
