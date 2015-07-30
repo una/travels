@@ -1,8 +1,15 @@
 @import '../shared';
 
 @font-face {
-  font-family: 'Abril Fatface';
-  src: url('/fonts/AbrilFatface-Regular.otf');
+  font-family: 'Input Mono Black';
+  src: url('/fonts/InputMono-Black.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Input Mono';
+  src: url('/fonts/InputMono-Light.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +20,7 @@
 
   h1,
   h2 {
-    font-family: 'Abril Fatface', 'Gravitas One', cursive;
+    font-family: 'Input Mono Black', 'Courier', monospace;
     font-size: 2.5em;
     color: #D9111C;
     margin-left: 1.8em;
@@ -27,12 +34,12 @@
   }
 
   .poem {
-    font-size: 1.2em;
-    font-family: serif;
+    font-family: 'Input Mono', monospace;
+    font-size: .9em;
     max-width: 24em;
     margin: 1em auto;
     float: left;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .img-area {
