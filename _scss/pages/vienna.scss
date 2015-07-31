@@ -15,6 +15,7 @@
   .poem {
     transition-duration: .5s;
     transform: translateX(60%);
+    // mix-blend-mode: color-burn;
 
     @include breakpoint(xl) {
       transform: translateX(10%);

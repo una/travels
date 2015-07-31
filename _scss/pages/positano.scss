@@ -62,7 +62,7 @@
     height: 50em;
     text-align: right;
     padding: 2em 6em;
-    mix-blend-mode: difference;
+    mix-blend-mode: color-burn;
 
     @include breakpoint(lg) {
       padding: 2em 4em;
@@ -73,6 +73,7 @@
       max-width: 24em;
       height: auto;
       padding: 2em;
+      color: #222;
       mix-blend-mode: initial;
       background-color: rgba(#6BD2CB, .5);
     }
