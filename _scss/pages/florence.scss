@@ -1,5 +1,13 @@
 @import '../shared';
 
+@font-face {
+  font-family: 'Majesti Banner';
+  src: url('/fonts/Majesti-Banner-Book.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .florence--page {
   padding: 3em 3em 15em;
   background: $color--offwhite;
@@ -16,21 +24,25 @@
     }
 
   .title {
-    font-family: 'League Script', cursive;
+    font-family: 'Majesti Banner', cursive;
     font-size: 10em;
     margin: 0;
     text-align: center;
     color: $color--dimgrey;
+    font-variant-ligatures: discretionary-ligatures;
+    text-transform: lowercase;
+
   }
 
   .subtitle {
-    font-family: 'League Script', cursive;
+    font-family: 'Majesti Banner', cursive;
     font-size: 2em;
-    text-align: center;
     display: block;
     margin: -1.5em 3em 1em;
     width: 100%;
     color: $color--purple;
+    text-transform: lowercase;
+
   }
 
   .poem-one {
@@ -54,7 +66,8 @@
   .poem-one h2, .poem-two h2{
     margin: 1em;
     font-size: 4em;
-    font-family: 'League Script', cursive;
+    text-transform: lowercase;
+    font-family: 'Majesti Banner', cursive;
     color: $color--purple;
     background-color: rgb(236, 236, 176);
     border-radius: 50%;

@@ -10,6 +10,8 @@ tags:
 - netherlands
 - 2012
 ---
+#Amsterdam
+
 Endless bubbles, a fish in an aquarium inside of a coffee shop, and everything was green: my first steps in Europe. Navigating crooked streets lettered with accents; maps lettered with flourishes I could only appreciate for their aesthetics. “Where am I?” I asked more than once.
 
 We went on a scavenger hunt, seeking a landmark to locate us. The traffic was heavy, but roads were safer than streets. Teenage girls on iPhones on their bicycles locked on bicycles, four rows deep. Tripping on gears and peddles to get through, just tripping.

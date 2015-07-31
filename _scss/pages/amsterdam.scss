@@ -1,1 +1,15 @@
 @import '../shared';
+
+@font-face {
+  font-family: 'Majesti Banner';
+  src: url('/fonts/Majesti-Banner-Book.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.amsterdam--page {
+  h1 {
+    font-family: 'Majesti Banner', cursive;
+    font-variant-ligatures: discretionary-ligatures;
+  }
+}
