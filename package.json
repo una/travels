@@ -1,9 +1,11 @@
 {
   "name": "travels",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Life is short. I'm just trying to make the best of it. This is an adventure story",
   "main": "gulpfile.js",
   "scripts": {
+    "dev": "gulp",
+    "deploy": "surge ./_site http://travels.surge.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Una Kravets",
