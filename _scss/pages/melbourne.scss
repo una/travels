@@ -1,7 +1,24 @@
 @import '../shared';
 
+@font-face {
+  font-family: 'Grape Dragon';
+  src: url('/fonts/GrapeDragon.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .melbourne--page {
   min-height: 105vh;
+
+  h1 {
+    font-family: 'Grape Dragon', sans-serif;
+    font-size: 4em;
+    letter-spacing: .05em;
+  }
+
+  h2 {
+    // font-family: 'Grape Dragon', sans-serif;
+  }
 
   .poem {
     max-width: 24em;
