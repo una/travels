@@ -12,6 +12,10 @@
     @media (min-width: 768px) { @content; }
   }
 
+  @else if $class == sm-md {
+    @media (max-width: 850px) { @content; }
+  }
+
   @else if $class == md {
     @media (max-width: 992px) { @content; }
   }

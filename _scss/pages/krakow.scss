@@ -28,6 +28,7 @@
     font-size: 2.5em;
     color: #D9111C;
     margin-left: 1.8em;
+    mix-blend-mode: difference;
   }
 
   .poem-area {
@@ -35,6 +36,10 @@
     display: block;
     padding: 2em;
     font-family: 'Source Serif Pro', serif;
+
+    @include breakpoint(sm-md) {
+      max-width: 100%;
+    }
   }
 
   .poem {
@@ -44,6 +49,17 @@
     margin: 1em auto;
     float: left;
     line-height: 1.5;
+
+    @include breakpoint(sm-md) {
+      margin: 0 auto;
+      position: relative;
+      display: block;
+      max-width: 100%;
+      overflow: hidden;
+      background-color: rgba(255,255,255,.75);
+      padding: 2em;
+      mix-blend-mode: hard-light;
+    }
   }
 
   .img-area {
@@ -51,6 +67,11 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    @include breakpoint(sm-md) {
+      position: relative;
+      width: 100%;
+    }
 
     .img-one, .img-two {
       mix-blend-mode: multiply;
