@@ -13,7 +13,12 @@
   overflow: hidden;
 
   .poem {
-    margin-left: 60%
+    transition-duration: .5s;
+    transform: translateX(60%);
+
+    @include breakpoint(xl) {
+      transform: translateX(10%);
+    }
   }
 
   h1 {
