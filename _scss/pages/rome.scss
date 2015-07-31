@@ -34,6 +34,16 @@
   .poem {
     p:first-child {
       font-size: 1.25em;
+      float: left;
+
+      &:first-letter {
+        font-size: 4.5em;
+        color: $color--purple;
+        margin: .45em .1em;
+        display: inline-block;
+        line-height: 0;
+        float: left;
+      }
     }
 
     line-height: 1.4;
@@ -41,13 +51,6 @@
     margin-top: 1em;
 
     p {
-      &:first-letter {
-        font-size: 1.5em;
-        color: $color--purple;
-        margin-left: 1em;
-        line-height: 0;
-      }
-
       margin-bottom: 1em;
     }
   }
