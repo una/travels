@@ -9,7 +9,6 @@ tags:
 - amsterdam
 - netherlands
 - 2012
-publish: true
 ---
 #Amsterdam
 
