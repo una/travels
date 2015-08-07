@@ -31,6 +31,6 @@ publish: true
   <br>
   It's just beautiful here. Marinas and tall trees emerging from hazy air; smoke from wild fires and new friends. <span>I feel the love.</span>
   <br>
-  Heading away from Canada and toward big, clear windows. To fish-throwing and gum-ridden walls lining a tiny alleyway full of tourists. The salmon is impecable and gamey. Totem pole culture surrounding a park full of Polka and cheers. Chocolate-covered banana falling onto my lap as we cheer, too.<span>I feel the love.</span>
+  Heading away from Canada and toward big, clear windows. To fish-throwing and gum-ridden walls lining a tiny alleyway full of tourists. The salmon is impecable and gamey. Totem pole culture surrounding a park full of Polka and cheers. Chocolate-covered banana falling onto my lap as we cheer, too. <span>I feel the love.</span>
 </section>
 </p>

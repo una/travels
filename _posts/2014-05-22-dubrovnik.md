@@ -15,7 +15,7 @@ publish: true
 
 <div class="poem">
 <p>
-<strong>In the morning, I had plans.</strong> I was going to stay here a while, and explore this beautiful, ancient walled town on the coast. I'd Eat fish with bones in it, and find feel like I was walking the streets of Kings. After all, I was. Orange rooftops, a calm sea, and a hint of salt in the breeze: it could be worse.
+<strong>In the morning, I had plans.</strong> I was going to stay here a while, and explore this beautiful, ancient walled town on the coast. Eat fish with bones in it, and feel like I was walking the streets of Kings. After all, I was. Orange rooftops, a calm sea, and a hint of salt in the breeze: it could be worse.
 <br>
 Three days turned into one day when I found myself drinking wine out of a teacup, wearing a cowboy hat, and rejecting a marriage proposal. The entire hostel was there. We made friends fast.
 <br>

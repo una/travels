@@ -55,10 +55,18 @@
 
   h1 {
     font-size: 3em;
+
+    @include breakpoint(md) {
+      font-size: 2em;
+    }
   }
 
   h2 {
     font-size: 2em;
+
+    @include breakpoint(md) {
+      font-size: 1em;
+    }
   }
 
   p {
@@ -67,6 +75,10 @@
     line-height: 1.5;
     max-width: 24em;
     margin: 0 auto;
+
+    @include breakpoint(md) {
+      padding: 0 .25em 0 2em;
+    }
   }
 
   br {
@@ -74,23 +86,35 @@
   }
 
   .img-area {
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 105vh;
-    flex: 1.8;
+    flex: 2;
+
+    @include breakpoint(sm) {
+      height: 65vh;
+    }
   }
 
   .poem-area {
     color: #686969;
     flex: 1;
+    // margin: 4em 0;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+
+    @include breakpoint(sm) {
+      width: 100%;
+      min-height: 30em;
+    }
   }
 
   .marina {
     background: url('../img/washington/marina.jpg');
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     filter: grayscale(20%) brightness(85%);
     background-position: 50%;
   }
@@ -103,12 +127,17 @@
     padding: 2em;
     width: 80%;
     max-width: 450px;
-    position: absolute;
-    top: -32em;
+    // position: absolute;
+    top: -65vh;
     margin: 0 auto;
     background:  $wood-color;
     position: relative;
+
     box-shadow: 0px 0px 0px 5px black,0px 0px 0px 10px  $wood-color;
+
+    @include breakpoint(sm) {
+      top: -40vh;
+    }
 
     &:before {
       content: '\2B22';
@@ -120,6 +149,10 @@
       text-align: center;
       top: -.7em;
       z-index: -1;
+
+      @include breakpoint(md) {
+        font-size: 16em;
+      }
     }
 
     &:after {
@@ -132,11 +165,19 @@
       text-align: center;
       top: -.55em;
       z-index: -1;
+
+      @include breakpoint(md) {
+        font-size: 16em;
+      }
     }
   }
 
   main {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
   }
 }
