@@ -1,8 +1,15 @@
 @import '../shared';
 
 @font-face {
-  font-family: 'Grape Dragon';
-  src: url('/fonts/GrapeDragon.ttf');
+  font-family: 'The Ramble';
+  src: url('/fonts/TheRamble-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('/fonts/Exo-Thin.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,25 +17,40 @@
 .melbourne--page {
   min-height: 105vh;
 
-  h1 {
-    font-family: 'Grape Dragon', sans-serif;
-    font-size: 4em;
-    letter-spacing: .05em;
+  .title-area {
+    display: block;
+    position: relative;
   }
 
-  h2 {
-    // font-family: 'Grape Dragon', sans-serif;
+  .city {
+    font-family: 'The Ramble', sans-serif;
+    font-size: 4em;
+    letter-spacing: .05em;
+    color: #4c89d3;
+  }
+
+  .date {
+    font-family: 'The Ramble', sans-serif;
+    transform: rotate(90deg);
+    top: 1em;
+    right: -1em;
+    font-size: 3em;
+    letter-spacing: .05em;
+    position: absolute;
+    color: #c3a877;
   }
 
   .poem {
-    max-width: 24em;
-    height: 100%;
-    max-width: 20em;
-    // float: left;
-    // position: absolute;
+    font-family: Exo;
+    padding: 1.6em;
+    font-size: .95em;
+    max-width: 23em;
+    color: #ddd;
+    line-height: 1.6;
 
     br {
       clear: both;
+      line-height: 3;
     }
 
     span {
@@ -36,7 +58,8 @@
       padding: 1em 2em;
       display: block;
       margin-bottom: -1em;
-      border-left: 2px solid currentColor;
+      color: #c3a877;
+      font-size: .9em;
     }
   }
 
@@ -49,7 +72,6 @@
     height: 105vh;
     background: #222;
     padding: 2em;
-    color: white;
     float: left;
   }
 
@@ -57,34 +79,11 @@
     background: url('../../img/melbourne/baller.jpg'), white;
     background-blend-mode: multiply;
     background-size: cover;
-    // background-repeat: no-repeat;
     width: 60%;
     min-height: 105vh;
     float: right;
     animation: colorShift 40s steps(1) infinite alternate;
   }
-
-
-
-  // .img-area-1 {
-  //   position: absolute;
-  //   shape-outside: content-box;
-  //   top: -10em;
-  //   right: 0;
-  //   width: 400px;
-  //   transform: rotate(-20deg);
-  // }
-
-  // .img-area-2 {
-  //   // position: absolute;
-  //   float: left;
-  //   shape-outside: content-box;
-  //   top: -15em;
-  //   left: 0em;
-  //   width: 400px;
-  //   transform: rotate(10deg);
-
-  // }
 }
 
 @keyframes colorShift {

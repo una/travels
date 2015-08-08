@@ -1,33 +1,37 @@
 @import '../shared';
 
 @font-face {
-  font-family: 'hvd-peace';
-  src: url('/fonts/HVD_Peace-webfont.eot');
-  src: url('/fonts/HVD_Peace-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/HVD_Peace-webfont.woff') format('woff'),
-       url('/fonts/HVD_Peace-webfont.ttf') format('truetype'),
-       url('/fonts/HVD_Peace-webfont.svg#hvd_peaceregular') format('svg');
+  font-family: 'Built Titling';
+  src: url('/fonts/built-titling-bd.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('/fonts/Exo-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 
 .berlin--page {
-
   background: url('../../img/berlin/tresor.jpg');
   background-blend-mode: multiply;
   background-size: contain;
+  height: 105vh;
+  overflow: hidden;
 
   .location {
-    font-family: 'hvd-peace', 'Impact', sans-serif;
-    font-size: 11em;
+    font-family: 'Built Titling',Impact,sans-serif;
+    font-size: 13em;
     line-height: .9;
     max-width: 6em;
-    margin: .25em 0 .5em .25em;
+    margin: 0 0 .45em -.065em;
     position: relative;
-    margin-top: 0;
-    color: yellow;
+    color: #ff0;
     mix-blend-mode: exclusion;
+    z-index: 4;
   }
 
   mark {
@@ -45,15 +49,15 @@
   }
 
   .date {
+    font-family: 'Built Titling', Impact,sans-serif;
     position: absolute;
     top: 1em;
-    right: 1em;
-    font-family: hvd-peace,Impact,sans-serif;
-    font-size: 5em;
-    mix-blend-mode: difference;
+    right: -.05em;
+    font-size: 8em;
+    mix-blend-mode: color-dodge;
     max-width: 7em;
-    color: violet;
-
+    color: red;
+    z-index: 6;
   }
 
   .poem {
@@ -65,17 +69,18 @@
     margin: -8em 3em;
     position: relative;
     display: inline-block;
+    font-family: 'Exo', 'Open Sans';
 
     &:before {
       content: '';
       display: block;
       width: 100%;
       height: 100%;
-      background: red;
-      opacity: .5;
-      mix-blend-mode: multiply;
+      background: #cb00ff;
+      opacity: 0.6;
+      mix-blend-mode: color-dodge;
       position: absolute;
-      top: 3.5em;
+      top: -4.5em;
       right: 2em;
     }
   }
