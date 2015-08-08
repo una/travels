@@ -106,7 +106,8 @@
 
     @include breakpoint(sm) {
       width: 100%;
-      min-height: 30em;
+      min-height: 35em;
+      margin-bottom: 5em;
     }
   }
 
@@ -127,7 +128,6 @@
     padding: 2em;
     width: 80%;
     max-width: 450px;
-    // position: absolute;
     top: -65vh;
     margin: 0 auto;
     background:  $wood-color;
@@ -168,6 +168,15 @@
 
       @include breakpoint(md) {
         font-size: 16em;
+      }
+    }
+
+    @include breakpoint(xs) {
+      background: rgba(white, .9);
+
+      &:before,
+      &:after {
+        display: none;
       }
     }
   }
