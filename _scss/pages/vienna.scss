@@ -8,14 +8,14 @@
   line-height: 1.4;
   padding: 2em;
   width: 100%;
-  background: url('../../img/vienna/vienna.jpg');
+  background: url('../../img/vienna/vienna.jpg'), #c19600;
+  background-blend-mode: hard-light;
   filter: sepia(.5);
   overflow: hidden;
 
   .poem {
     transition-duration: .5s;
     transform: translateX(60%);
-    // mix-blend-mode: color-burn;
 
     @include breakpoint(xl) {
       transform: translateX(10%);
