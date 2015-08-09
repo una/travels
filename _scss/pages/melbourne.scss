@@ -33,7 +33,7 @@
     font-family: 'The Ramble', sans-serif;
     transform: rotate(90deg);
     top: 1em;
-    right: -1em;
+    right: -.5em;
     font-size: 3em;
     letter-spacing: .05em;
     position: absolute;
@@ -49,8 +49,8 @@
     line-height: 1.6;
 
     @include breakpoint(sm) {
-      max-width: 42em;
-      padding: 1.6em 4em 0;
+      max-width: 38em;
+      padding: 1.6em 6em 0;
     }
 
     @include breakpoint(xs) {

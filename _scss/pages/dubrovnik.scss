@@ -22,6 +22,10 @@
   background-size: cover;
   background-blend-mode: lighten;
 
+  @include breakpoint(sm) {
+    height: 130vh;
+  }
+
   .poem {
     font-family: 'Fjord One', serif;
     color: #3C0808;
@@ -82,6 +86,7 @@
     @include breakpoint(xs) {
       font-size: 2.5em;
       margin-bottom: 6em;
+      left: -2.8em
     }
   }
 
