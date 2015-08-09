@@ -1,6 +1,5 @@
 @import '../shared';
 
-
 @font-face {
   font-family: 'CloisterBlack';
   src: url('/fonts/CloisterBlack.ttf');
@@ -10,16 +9,23 @@
 
 .munich--page {
   overflow: hidden;
-  height: 120vh;
+  min-height: 120vh;
+  margin-bottom: 1em;
   font-family: 'CloisterBlack';
   font-size: 1.3em;
   background: url('../img/munich/munich.jpg') 0 / cover fixed;
 
-  .centerer{
+  .centerer {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 105vh;
+
+    @include breakpoint(sm) {
+      justify-content: center;
+      align-items: flex-start;
+      margin: 4em auto;
+    }
   }
 
   br {
@@ -30,12 +36,9 @@
     margin-top: -3em;
     color: #222;
     max-width: 50%;
-    // background-color: white;
-    // box-shadow: 0px 0px 0px 10px black, 0px 0px 0px 30px  white;
     border: 10px solid currentColor;
     padding: 3em 4em;
     overflow: hidden;
-    // mix-blend-mode: multiply;
     position: relative;
 
     &:before {
@@ -45,6 +48,22 @@
       background: url('../img/munich/munich.jpg') 0 / cover fixed;
       filter: blur(15px) brightness(1.3);
       margin: -30px;
+    }
+
+    @include breakpoint(lg) {
+      max-width: 80%;
+    }
+
+    @include breakpoint(md) {
+      max-width: 90%;
+    }
+
+    @include breakpoint(sm) {
+      padding: 2em;
+    }
+
+    @include breakpoint(xs) {
+      padding: 1em;
     }
   }
 
@@ -84,6 +103,14 @@
   .city {
     font-size: 3em;
     margin-top: -.5em;
+
+    @include breakpoint(sm) {
+      font-size: 2em;
+    }
+
+    @include breakpoint(xs) {
+      font-size: 1.5em;
+    }
   }
 
   .date {
@@ -91,19 +118,9 @@
     margin-bottom: .25em;
     padding-bottom: .25em;
     font-size: 1.5em;
+
+    @include breakpoint(sm) {
+      font-size: 1.2em;
+    }
   }
 }
-
-
-
-// @keyframes blurout {
-//   0% {
-//     filter: blur(0) brightness(1);
-//   }
-//   50% {
-//     filter: blur(0) brightness(1);
-//   }
-//   100% {
-//     filter: blur(2px) brightness(.8);
-//   }
-// }
