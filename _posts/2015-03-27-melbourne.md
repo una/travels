@@ -12,16 +12,6 @@ tags:
 publish: true
 ---
 
-<!-- <div class="img-area-1">
-  <img class="top" src="../img/melbourne/top.jpg" alt="">
-  <img class="bottom" src="../img/melbourne/baller.jpg" alt="">
-</div>
-
-<div class="img-area-2">
-  <img class="top" src="../img/melbourne/top.jpg" alt="">
-  <img class="bottom" src="../img/melbourne/baller.jpg" alt="">
-</div>
- -->
 <div class="side-one">
   <div class="title-area">
     <h1 class="city">Melbourne, Australia</h1>
@@ -40,3 +30,5 @@ publish: true
   </p>
 </div>
 <div class="side-two"></div>
+
+<div class="clear"></div>

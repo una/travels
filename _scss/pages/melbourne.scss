@@ -15,7 +15,6 @@
 }
 
 .melbourne--page {
-  min-height: 105vh;
 
   .title-area {
     display: block;
@@ -27,6 +26,7 @@
     font-size: 4em;
     letter-spacing: .05em;
     color: #4c89d3;
+    max-width: 85%;
   }
 
   .date {
@@ -47,6 +47,16 @@
     max-width: 23em;
     color: #ddd;
     line-height: 1.6;
+
+    @include breakpoint(sm) {
+      max-width: 42em;
+      padding: 1.6em 4em 0;
+    }
+
+    @include breakpoint(xs) {
+      max-width: 42em;
+      padding: 1.6em 0 0;
+    }
 
     br {
       clear: both;
@@ -69,20 +79,48 @@
 
   .side-one {
     width: 40%;
-    height: 105vh;
+    min-height: 100vh;
     background: #222;
     padding: 2em;
     float: left;
+
+    @include breakpoint(md) {
+      width: 50%;
+      min-height: auto;
+    }
+
+    @include breakpoint(sm) {
+      width: 100%;
+      float: none;
+      clear: both;
+      height: auto;
+    }
   }
 
   .side-two {
     background: url('../../img/melbourne/baller.jpg'), white;
     background-blend-mode: multiply;
-    background-size: cover;
+    background-position: 50%;
+    background-size: 25%;
     width: 60%;
-    min-height: 105vh;
+    min-height: 100vh;
     float: right;
     animation: colorShift 40s steps(1) infinite alternate;
+
+    @include breakpoint(md) {
+      animation: none;
+      background-position: 50%;
+      background-size: 100%;
+      width: 50%;
+      min-height: 100vh;
+    }
+
+    @include breakpoint(sm) {
+      animation: none;
+      float: none;
+      clear: both;
+      width: 100%;
+    }
   }
 }
 
@@ -90,56 +128,56 @@
   0% {
     background: url('../../img/melbourne/baller.jpg'), rgba(tomato, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   10% {
     background: url('../../img/melbourne/baller.jpg'), rgba(yellow, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   20% {
     background: url('../../img/melbourne/baller.jpg'), rgba(lightblue, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   30% {
     background: url('../../img/melbourne/baller.jpg'), rgba(hotpink, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   40% {
     background: url('../../img/melbourne/baller.jpg'), rgba(#69D39E, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   50% {
     background: url('../../img/melbourne/baller.jpg'), rgba(blue, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   60% {
     background: url('../../img/melbourne/baller.jpg'), rgba(hotpink, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   70% {
     background: url('../../img/melbourne/baller.jpg'), white;
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   80% {
     background: url('../../img/melbourne/baller.jpg'), rgba(#D39B28, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   90% {
     background: url('../../img/melbourne/baller.jpg'), rgba(green, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
   100% {
     background: url('../../img/melbourne/baller.jpg'), rgba(hotpink, .25);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 25%;
   }
 }

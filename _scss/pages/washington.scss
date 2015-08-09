@@ -79,6 +79,10 @@
     @include breakpoint(md) {
       padding: 0 .25em 0 2em;
     }
+
+    @include breakpoint(sm) {
+      padding: 0 2em;
+    }
   }
 
   br {
