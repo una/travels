@@ -1,5 +1,9 @@
 // Grid Mixin
 @mixin breakpoint($class) {
+  @if $class == xxs {
+    @media (max-width: 360px) { @content; }
+  }
+
   @if $class == xs {
     @media (max-width: 500px) { @content; }
   }

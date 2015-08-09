@@ -1,31 +1,65 @@
 footer {
   text-align: center;
   width: 100%;
-  padding: 2em 0;
+  padding: 3em 0;
   position:absolute;
   bottom:0;
   left:0;
-  background: white;
+  background: $color--lightgrey;
   clear: both;
   float: none;
 
+  p {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    max-width: 90%;
+  }
+
   a {
     color: $color--purple;
+    transition-duration: .5s;
+
+    &:hover {
+      color: $color--blue;
+    }
   }
 
   small {
-    font-size: 80%;
-    margin-top: 2em;
+    font-size: .8em;
+    max-width: 90%;
+    margin: 1em auto;
     display: block;
+    font-style: italic;
+    color: dimgrey;
   }
 
   .all-posts {
+    max-width: 90%;
+    margin: 0 auto;
+
     li {
       display: inline-block;
+      margin-bottom: .5em;
 
       + :before {
         content: ' | ';
       }
+    }
+  }
+
+  .footer--home {
+    margin-bottom: 2em;
+    display: inline-block;
+    text-decoration: none;
+    color: $color--blue;
+    border: 1px solid $color--blue;
+    width: auto;
+    padding: 1em;
+
+
+    &:hover {
+      background: $color--blue;
+      color: white;
     }
   }
 }

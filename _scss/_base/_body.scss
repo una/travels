@@ -11,8 +11,21 @@ body {
 .wrapper {
   min-height: 100vh;
   position: relative;
-  padding-bottom: 10em;
+  padding-bottom: 20em;
   clear: both;
+
+  // need to increase padding on the bottom to accomodate for additional rows of cities
+  @include breakpoint(md) {
+    padding-bottom: 22.5em;
+  }
+
+  @include breakpoint(xs) {
+    padding-bottom: 25em;
+  }
+
+  @include breakpoint(xxs) {
+    padding-bottom: 27.5em;
+  }
 }
 
 ::selection {
