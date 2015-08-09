@@ -4,7 +4,7 @@
     @media (max-width: 360px) { @content; }
   }
 
-  @if $class == xs {
+  @else if $class == xs {
     @media (max-width: 500px) { @content; }
   }
 
@@ -37,6 +37,6 @@
   }
 
   @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    @warn "Breakpoint mixin supports: xxs, xs, sm, sm-md, md, md-red, lg, xl";
   }
 }

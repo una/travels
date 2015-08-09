@@ -54,12 +54,23 @@ footer {
     color: $color--blue;
     border: 1px solid $color--blue;
     width: auto;
-    padding: 1em;
+    padding: 1em 1.5em 1em 1em;
+    overflow: hidden;
 
+    span {
+      display: block;
+      float: left;
+      margin-right: .5em;
+      transition-duration: .5s;
+    }
 
     &:hover {
       background: $color--blue;
       color: white;
+
+      span {
+        transform: translateX(10em);
+      }
     }
   }
 }
