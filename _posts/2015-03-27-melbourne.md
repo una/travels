@@ -22,7 +22,7 @@ publish: true
   <br>
   There were lights and rooftops. A lot of rooftops. Seven sets of stairs to the cinema where we spilled Sangria and snickered. Planning our emergency exit: those small unremarkably memorable conversations.
   <br>
-  Cheerful accents were the chorus I was dancing along to behind a borrowed orange sun hat. I love Australia, and I love Australians more.
+  Cheerful accents were the chorus I was dancing along behind a borrowed orange sun hat. I love Australia, and I love Australians more.
   <br>
   <span>"Can I tether your connection? I need to find a place to stay tomorrow"</span>
   <br>
