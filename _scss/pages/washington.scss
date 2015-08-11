@@ -7,7 +7,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'Berylium';
   src: url('/fonts/Berylium.ttf');
@@ -188,6 +187,7 @@
   main {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     @include breakpoint(sm) {
       flex-direction: column;

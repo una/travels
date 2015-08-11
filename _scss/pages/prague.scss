@@ -3,6 +3,25 @@
 .prague--page {
   overflow: hidden;
   padding: 2em;
+  margin: 0 auto;
+  max-width: 1600px;
+
+  @include breakpoint(xl) {
+    max-width: 970px;
+  }
+
+  @include breakpoint(md) {
+    max-width: 440px;
+    padding: 1em 0;
+  }
+
+  @include breakpoint(xs) {
+    max-width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   .metadata {
     text-align: center;
@@ -18,13 +37,25 @@
     transform: rotate(-45deg);
     overflow: hidden;
 
+    @include breakpoint(xs) {
+      width: 250px;
+      height: 250px;
+      margin: 60px;
+    }
+
     img {
-      width: 300px*1.5;
-      height: 300px*1.5;
-      margin: -50px*1.5;
+      width: 450px;
+      height: 450px;
+      margin: -75px;
       transform: rotate(45deg);
       max-width: initial;
       filter: contrast(1.2);
+
+      @include breakpoint(xs) {
+        width: 400px;
+        height: 400px;
+      }
+
     }
 
       &:after {
@@ -33,10 +64,14 @@
         display: block;
         top: 0;
         left: 0;
-        width: 300px;
+        width: 100%;
         height: 300px;
         background: linear-gradient(-135deg, #015661 0,transparent 50%);
         mix-blend-mode: exclusion;
+
+        @include breakpoint(xs) {
+          height: 250px;
+        }
       }
   }
 
@@ -45,6 +80,13 @@
     width: 400px;
     height: 400px;
     margin: 25px;
+
+    @include breakpoint(xs) {
+      width: 350px;
+      height: 350px;
+      font-size: .88em;
+      margin: 10px;
+    }
   }
 
   p {
