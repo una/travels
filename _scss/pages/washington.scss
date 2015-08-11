@@ -116,6 +116,11 @@
 
   .marina {
     background: url('../img/washington/marina.jpg');
+
+    @include breakpoint(xs){
+      background: url('../img/washington/marina-sm.jpg');
+    }
+
     background-size: cover;
     width: 100%;
     height: 100%;

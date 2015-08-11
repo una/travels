@@ -10,6 +10,11 @@
 .negev--page {
   min-height: 100vh;
   background: url('../../img/negev/sunrise.jpg'), linear-gradient(-60deg, #3E052D 0,transparent 50%, #015661 100%);
+
+  @include breakpoint(xs) {
+    background: url('../../img/negev/sunrise-sm.jpg'), linear-gradient(-60deg, #3E052D 0,transparent 50%, #015661 100%);
+  }
+
   background-blend-mode: saturation;
   background-size: cover;
   background-position: 50%;

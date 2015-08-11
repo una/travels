@@ -99,6 +99,11 @@
 
   .side-two {
     background: url('../../img/melbourne/baller.jpg'), white;
+
+    @include breakpoint(xs) {
+      background: url('../../img/melbourne/baller-sm.jpg'), white;
+    }
+
     background-blend-mode: multiply;
     background-position: 50%;
     background-size: 25%;

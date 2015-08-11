@@ -46,7 +46,11 @@
   .container {
     // width: 800px;
     background: url('../../img/positano/positano.jpg'), linear-gradient(top left, rgba(16, 81, 250, 0.23) 0, rgba(245, 200, 17, 0.37) 110%);
-    // background: url('../../img/positano/positano.jpg'), linear-gradient(top,rgba(234, 107, 132, 0.2) 0,rgba(91, 86, 148, 0.3) 100%);
+
+    @include breakpoint(xs) {
+      background: url('../../img/positano/positano-sm.jpg'), linear-gradient(top left, rgba(16, 81, 250, 0.23) 0, rgba(245, 200, 17, 0.37) 110%);
+    }
+
     background-blend-mode: multiply;
     // this ensures that the center diagonal retains
     background-size: cover;

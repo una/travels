@@ -76,6 +76,11 @@
     .img-one, .img-two {
       mix-blend-mode: multiply;
       background: url('../../img/krakow/street.jpg');
+
+      @include breakpoint(xs) {
+        background: url('../../img/krakow/street-sm.jpg');
+      }
+
       background-size: cover;
     }
 

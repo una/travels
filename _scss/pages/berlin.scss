@@ -16,6 +16,11 @@
 
 .berlin--page {
   background: url('../../img/berlin/tresor.jpg'), #c006b6;
+
+  @include breakpoint(xs){
+    background: url('../../img/berlin/tresor-sm.jpg'), #c006b6;
+  }
+
   background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 105vh;

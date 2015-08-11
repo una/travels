@@ -9,6 +9,11 @@
   padding: 2em;
   width: 100%;
   background: url('../../img/vienna/vienna.jpg'), #c19600;
+
+  @include breakpoint(xs) {
+    background: url('../../img/vienna/vienna-sm.jpg'), #c19600;
+  }
+
   background-blend-mode: hard-light;
   filter: sepia(.5);
   overflow: hidden;

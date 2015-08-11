@@ -15,6 +15,10 @@
   font-size: 1.3em;
   background: url('../img/munich/munich.jpg') 0 / cover fixed;
 
+  @include breakpoint(xs) {
+    background: url('../img/munich/munich-sm.jpg') 0 / cover fixed;
+  }
+
   .centerer {
     display: flex;
     align-items: center;
