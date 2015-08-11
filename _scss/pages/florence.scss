@@ -23,6 +23,18 @@
       justify-content: center;
     }
 
+  @include breakpoint(md) {
+      font-size: .9em;
+    }
+
+  @include breakpoint(sm) {
+      font-size: .8em;
+    }
+
+  @include breakpoint(xs) {
+      font-size: .75em;
+    }
+
   .title {
     font-family: 'Majesti Banner', cursive;
     font-size: 10em;
@@ -31,6 +43,11 @@
     color: $color--dimgrey;
     font-variant-ligatures: discretionary-ligatures;
     text-transform: lowercase;
+    width: 100%;
+
+    @include breakpoint(sm) {
+      font-size: 8em;
+    }
 
   }
 
@@ -43,20 +60,30 @@
     color: $color--purple;
     text-transform: lowercase;
 
+    @include breakpoint(sm) {
+      font-size: 1.5em;
+      margin: -1em 2em;
+    }
+
   }
 
   .poem-one {
-    h2 { float: left; }
     float: left;
+
+    h2 {
+      float: left;
+    }
   }
 
   .poem-two {
     margin-left: 50%;
-
-    h2 { float: right; }
     float: right;
     width: 45%;
     padding-left: 1em;
+
+    h2 {
+      float: right;
+    }
   }
 
   br {
@@ -75,6 +102,14 @@
     @include breakpoint(lg) {
       text-align: center;
       float: none;
+      height: 1.8em;
+      width: 1.8em;
+      line-height: 1.8;
+      margin: 1em auto;
+    }
+
+    @include breakpoint(sm) {
+      font-size: 3em;
     }
   }
 
