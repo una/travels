@@ -27,6 +27,14 @@
     margin: 3em;
     font-family: 'Berylium Bold', serif;
 
+
+    // @include breakpoint(md) {
+      background: rgba(0,0,0,.7);
+      color: goldenrod;
+          box-shadow: 0 0 0 10px #5F2323,0 0 0 15px rgba(0,0,0,.7),0 0 0 20px #926005,0 0 0 23px rgba(0,0,0,.7);
+      mix-blend-mode: luminosity;
+    // }
+
     @include breakpoint(sm) {
       margin: -2em -2em 15em;
       padding: 1em;

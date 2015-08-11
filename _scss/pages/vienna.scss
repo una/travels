@@ -4,7 +4,7 @@
   font-family: 'Linden Hill', serif;
   color: $color--darkerpurple;
   height: 140vh;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.4;
   padding: 2em;
   width: 100%;
@@ -13,12 +13,22 @@
   filter: sepia(.5);
   overflow: hidden;
 
+  @include breakpoint(md) {
+    font-size: 1em;
+    padding: 2em 0;
+  }
+
+  @include breakpoint(sm) {
+    font-size: .975em;
+  }
+
   .poem {
     transition-duration: .5s;
+    padding-left: 2em;
     transform: translateX(60%);
 
     @include breakpoint(xl) {
-      transform: translateX(10%);
+      transform: translateX(0%);
     }
   }
 
