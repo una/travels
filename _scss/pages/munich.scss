@@ -17,6 +17,7 @@
 
   @include breakpoint(xs) {
     background: url('../img/munich/munich-sm.jpg') 0 / cover fixed;
+    background-attachment: fixed;
   }
 
   .centerer {
