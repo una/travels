@@ -25,12 +25,18 @@
 
   background-attachment: fixed;
   background-size: cover;
-  height: 120vh;
+  min-height: 120vh;
   width: 100%;
   background-blend-mode: lighten;
 
   @include breakpoint(sm) {
-    height: 130vh;
+    // min-height: 120vh;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+
+  @include breakpoint(xs) {
+    min-height: 180vh;
   }
 
   .poem {
@@ -40,8 +46,6 @@
     column-gap: 2em;
     max-width: 60em;
     padding: 3em;
-    z-index: 2;
-    position: relative;
     margin: 0 auto;
 
     strong {
@@ -50,9 +54,9 @@
 
     @include breakpoint(sm) {
       column-count: 2;
-      background-color: rgba(white, .5);
-      color: #444;
-      }
+      background-color: white;
+      bottom: 23em;
+      position: absolute;
     }
 
     @include breakpoint(xs) {
@@ -85,17 +89,16 @@
       top: .1em;
       left: .1em;
       mix-blend-mode: difference;
+      z-index: 2;
     }
 
     @include breakpoint(sm) {
       font-size: 4em;
-      top: 6em;
+      top: 0;
     }
 
     @include breakpoint(xs) {
-      font-size: 2.5em;
-      margin-bottom: 6em;
-      left: -2.8em
+      font-size: 3em;
     }
   }
 

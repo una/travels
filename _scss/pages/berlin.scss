@@ -16,6 +16,11 @@
 
 .berlin--page {
   background: url('../../img/berlin/tresor.jpg'), #c006b6;
+  margin-bottom: -7.5em;
+
+  @include breakpoint(sm) {
+    margin-bottom: 0;
+  }
 
   @include breakpoint(xs){
     background: url('../../img/berlin/tresor-sm.jpg'), #c006b6;
