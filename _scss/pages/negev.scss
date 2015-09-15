@@ -8,6 +8,7 @@
 }
 
 .negev--page {
+  font-family: 'Berylium Bold', serif;
   min-height: 100vh;
   background: url('../../img/negev/sunrise.jpg'), linear-gradient(-60deg, #3E052D 0,transparent 50%, #015661 100%);
 
@@ -22,6 +23,26 @@
   padding: 4em;
   position: relative;
 
+  .title-info {
+    font-size: 10em;
+    position: absolute;
+    bottom: 0;
+    left: -.05em;
+    color: white;
+  }
+
+  .city {
+    mix-blend-mode: soft-light;
+  }
+
+  .date {
+    font-size: .5em;
+    display: block;
+    line-height: .2em;
+    margin: -0.5em 0 1em .8em;
+    mix-blend-mode: soft-light;
+  }
+
   .poem {
     background: white;
     display: block;
@@ -29,7 +50,6 @@
     max-width: 26em;
     box-shadow: 0px 0px 0px 10px grey, 0px 0px 0px 15px  white, 0px 0px 0px 20px grey, 0px 0px 0px 23px  white;
     mix-blend-mode: soft-light;
-    font-family: 'Berylium Bold', serif;
 
 
     // @include breakpoint(md) {
