@@ -1,16 +1,15 @@
 @import '../shared';
 
-// IDEA: Flourishy <hr>'s or the space between paragraphs
-
 .rome--page {
   font-family: 'Alegreya', serif;
   padding-bottom: 6em;
+  background-color: wheat;
 
   .rome-bg {
     position: absolute;
     top: 0;
     transform: translateX(10em);
-    z-index: -2;
+    z-index: 1;
 
     @include breakpoint(md) {
       position: relative;
@@ -29,6 +28,11 @@
     @include breakpoint(md) {
       text-align: left
     }
+  }
+
+  .content-area {
+    z-index: 2;
+    position: relative;
   }
 
   .poem {
