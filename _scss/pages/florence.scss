@@ -9,11 +9,11 @@
 
 
 .florence--page {
-  padding: 3em 3em 15em;
-  //background: $color--offwhite;
-  background: url('../../img/florence/pontevecchio.jpg');
-  background-size: cover;
-  background-position: fixed;
+    padding: 3em 3em 15em;
+    background: url(../../img/florence/pontevecchio.jpg), linear-gradient(-235deg, transparent 60%,#F1E08B 60%);
+    background-blend-mode: screen;
+    background-size: cover;
+    background-attachment: fixed;
 
   main {
     width: 100%;
@@ -43,10 +43,10 @@
     font-size: 15em;
     margin: 0;
     text-align: center;
-    color: #06B3A5;
     font-variant-ligatures: discretionary-ligatures;
     text-transform: lowercase;
     width: 100%;
+    color: #06B3A5;
     mix-blend-mode: difference;
 
     @include breakpoint(sm) {
@@ -74,15 +74,7 @@
 
   }
 
-  .poem-one {
-    float: left;
-
-    h2 {
-      float: left;
-    }
-  }
-
-  .poem-two {
+  .poem-one, .poem-two {
     margin-left: 50%;
     float: right;
     width: 45%;
@@ -102,9 +94,10 @@
     font-size: 4em;
     text-transform: lowercase;
     font-family: 'Majesti Banner', cursive;
-    color: #8B6EDD;
-    background-color: rgb(236, 236, 176);
+    background-color: #D5221D;
     border-radius: 50%;
+    color: #FBF1B5;
+    mix-blend-mode: multiply;
 
     @include breakpoint(lg) {
       text-align: center;
@@ -125,7 +118,7 @@
     font-family: 'EB Garamond', serif;
     font-size: 1.4em;
     line-height: 1.6;
-    // max-width: 28em;
+    padding: 2em;
     margin-right: 2em;
     width: 50%;
 
@@ -133,53 +126,21 @@
       max-width: 24em;
       margin: 0 auto;
       width: 100%;
-      //padding: 0;
       clear: both;
     }
 
     p::first-line {
       margin-top: 2.5em;
       color: #8B6EDD;
-      //background: mix($color--offwhite, rgb(236, 236, 176), 50%);
     }
 
-  mix-blend-mode: multiply;
-  //background-color: #3B4B5A;
-  padding: 2em;
-  //color: white;
+  mark {
+    background-color: #C7BCE5;
+    padding: .2em 0;
   }
+}
 
-  // .image-gallery {
-  //   float: left;
-  //   max-width: 600px;
-  //   display: block;
-  //   width: 45%;
-  //   padding-left: 2em;
-
-  //   @include breakpoint(lg) {
-  //     margin-top: 4em;
-  //     width: 100%;
-  //   }
-
-    // img {
-    //   mix-blend-mode: multiply;
-    //   width: 70%;
-    // }
-
-    // .ponte-vecchio {
-    //   margin: -30% 40%;
-    // }
-
-    // .top-of-city {
-    //   margin: 5% 10%;
-    // }
-
-    // .from-duomo {
-
-    // }
-  // }
-
-  .sketch {
+.sketch {
     background: url('../img/florence/sketch.jpg');
     position: absolute;
     bottom: 0;
@@ -187,7 +148,7 @@
     height: 1000px;
     opacity: .6;
     width: 50%;
-    -webkit-filter: brightness(153%) contrast(134%);
+    -webkit-filter: brightness(153%) contrast(134%) opacity(70%);
     mix-blend-mode: multiply;
     background-size: contain;
     background-repeat: no-repeat;
