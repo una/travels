@@ -7,13 +7,13 @@
   font-style: normal;
 }
 
-
 .florence--page {
     padding: 3em 3em 15em;
     background: url(../../img/florence/pontevecchio.jpg), linear-gradient(-235deg, transparent 60%,#F1E08B 60%);
     background-blend-mode: screen;
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 
   main {
     width: 100%;
@@ -28,6 +28,8 @@
 
   @include breakpoint(md) {
       font-size: .9em;
+      background-attachment: initial;
+      background-size: contain;
     }
 
   @include breakpoint(sm) {
@@ -152,5 +154,9 @@
     mix-blend-mode: multiply;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include breakpoint(md) {
+      display: none;
+    }
   }
 }
