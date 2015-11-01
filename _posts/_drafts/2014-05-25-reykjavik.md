@@ -20,7 +20,7 @@ when we found the right ranch;
 We stayed in someone's backyard
 and you made all the plans.
 Driving the Circle for hours,
-stopping by some black sands,
+stopped to walk on black sand,
 I traced puffin track footprints
 while you were holding my hand.
 Tectonic plates parted
