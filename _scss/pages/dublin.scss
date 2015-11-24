@@ -1,1 +1,45 @@
 @import '../shared';
+
+.dublin--page {
+  padding: 2em 1em 12em;
+  background: url('../../img/dublin/DSC00589.JPG'), #575785;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+p {
+  max-width: 23em;
+  display: block;
+  margin: .7rem auto;
+  font-style: italic;
+  color: white;
+  mix-blend-mode: exclusion;
+
+  &:nth-child(1) {
+    font-size: 1.4em;
+  }
+
+  &:nth-child(2) {
+    font-size: 2.1em;
+  }
+
+  &:nth-child(3) {
+    font-size: 1.7em;
+  }
+
+  &:nth-child(4) {
+    font-size: 1.1em;
+  }
+
+  &:nth-child(5) {
+    font-size: 1.6em;
+  }
+  &:nth-child(6) {
+    font-size: 2.3em;
+  }
+  &:nth-child(7) {
+    text-align: center;
+    margin-left: 2em;
+    font-size: 3.6em;
+  }
+}
