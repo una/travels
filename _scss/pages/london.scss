@@ -1,0 +1,60 @@
+@import '../shared';
+
+// DONT FORGET TO INCLUDE FONTS
+
+$offwhite: #eee;
+
+$colors: 1 hotpink, 2 yellow, 3 green, 4 cyan, 5 red, 6 orange, 7 lightgreen, 8 blue, 9 tan;
+
+.london--page {
+  background: $offwhite;
+}
+
+.photograph-composition {
+  padding: 1em .5em;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+
+  li {
+    margin: 1em;
+    flex-basis: 430px;
+    display: block;
+    height: 430px;
+
+    @each $num, $color in $colors {
+      &:nth-child(#{$num}) {
+        background: $color
+      };
+    }
+  }
+
+  .visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img { //MAKE VERTICALLY CENTERED w/FLEX
+    width: 50%;
+    margin-top: 25%;
+  }
+
+  .poem {
+    padding: 1em 1.5em 1.5em;
+    margin: 3em;
+    background: $offwhite;
+    font-family: 'Arapey';
+    line-height: 1.5;
+  }
+
+  .date {
+    text-align: center;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.8em;
+    margin: 1em auto;
+    display: block;
+  }
+}
