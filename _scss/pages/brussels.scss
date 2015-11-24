@@ -1,1 +1,28 @@
 @import '../shared';
+
+.brussels--page {
+  min-height: 100vh;
+
+  .poem {
+    -webkit-column-count: 3;
+    height: 20em;
+    -webkit-column-gap: 2em;
+    padding: 2em;
+  }
+
+}
+
+.square {
+  position: absolute;
+  top:0; left: -10%;
+  width: 100vw;
+  height: 120vh;
+  display: block;
+  background: url('../../img/brussels/square.jpg');
+  transform: rotate(-15deg);
+  width: 120%;
+  background-size: cover;
+  background-position: 50% 150px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
