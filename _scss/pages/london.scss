@@ -4,19 +4,20 @@
 
 $offwhite: #eee;
 
-$colors: 1 hotpink, 2 yellow, 3 green, 4 cyan, 5 red, 6 orange, 7 lightgreen, 8 blue, 9 tan;
+$colors: 1 hotpink, 2 yellow, 3 #96DC00, 4 #00FFE2, 5 red, 6 #FF7B00, 7 lightgreen, 9 #00B2FF, 8 tan;
 
 .london--page {
-  background: $offwhite;
+  background-color: $offwhite;
 }
 
 .photograph-composition {
-  padding: 1em .5em;
+  padding: 1em .5em 3em;
   justify-content: center;
   display: flex;
   flex-flow: row wrap;
 
   li {
+    position: relative;
     margin: 1em;
     flex-basis: 430px;
     display: block;
@@ -38,23 +39,41 @@ $colors: 1 hotpink, 2 yellow, 3 green, 4 cyan, 5 red, 6 orange, 7 lightgreen, 8 
   img { //MAKE VERTICALLY CENTERED w/FLEX
     width: 50%;
     margin-top: 25%;
+    mix-blend-mode: multiply;
   }
 
   .poem {
-    padding: 1em 1.5em 1.5em;
-    margin: 3em;
+    position: relative;
+    padding: 1.4em 1.6em;
+    text-align: justify;
+    font-size: 1.05em;
+    line-height: 1.5;
+    margin: 2.8em;
     background: $offwhite;
     font-family: 'Arapey';
-    line-height: 1.5;
+    height: calc(100% - 5.6em);
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .date {
     text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: -.4em;
     font-family: 'Playfair Display', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-style: italic;
-    font-size: 1.8em;
-    margin: 1em auto;
+    font-size: 4.5em;
     display: block;
+    color: #E93939;
+    mix-blend-mode: difference;
   }
 }
