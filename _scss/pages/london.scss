@@ -22,6 +22,7 @@ $colors: 1 hotpink, 2 yellow, 3 #96DC00, 4 #00FFE2, 5 red, 6 #FF7B00, 7 lightgre
     flex-basis: 430px;
     display: block;
     min-height: 430px;
+    display: flex;
 
     @each $num, $color in $colors {
       &:nth-child(#{$num}) {
@@ -38,7 +39,6 @@ $colors: 1 hotpink, 2 yellow, 3 #96DC00, 4 #00FFE2, 5 red, 6 #FF7B00, 7 lightgre
 
   img { //MAKE VERTICALLY CENTERED w/FLEX
     width: 50%;
-    margin-top: 25%;
     mix-blend-mode: multiply;
   }
 
@@ -65,15 +65,16 @@ $colors: 1 hotpink, 2 yellow, 3 #96DC00, 4 #00FFE2, 5 red, 6 #FF7B00, 7 lightgre
 
   .date {
     text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: -.33em;
     font-family: 'Andrea', 'Playfair Display', sans-serif;
     // font-family: 'Playfair Display', sans-serif;
     font-weight: 800;
     font-style: italic;
     font-size: 4.5em;
-    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -.33em;
     color: #E82020;
     mix-blend-mode: difference;
   }

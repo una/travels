@@ -2,6 +2,7 @@
 layout: default
 title: Archive
 ---
+<link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
 <style>
     {% include index.css %}
 </style>
@@ -14,7 +15,7 @@ title: Archive
     {% if post.publish %}
       <li class="post-list__item {{ post.slug }}">
       <a class="post-list__link" href="{{ post.url }}">
-        <div class="post-list__visual">
+        <div class="post-list__visual mayfair">
           <img class="post-list__img" src="{{ site.baseurl }}/img/covers/{{ post.slug }}.jpg" alt="{{ post.city }}">
           <!-- <div class="post-list__img-blender"></div> -->
         </div>
