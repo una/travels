@@ -3,7 +3,7 @@ layout: post
 slug: melbourne
 city: Melbourne
 country: Australia
-permalink: /melbourne
+permalink: /melbourne/
 date: '2015-03-27'
 tags:
 - melbourne

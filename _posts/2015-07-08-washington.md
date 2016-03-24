@@ -3,7 +3,7 @@ layout: post
 slug: washington
 city: Washington State
 country: USA
-permalink: /washington
+permalink: /washington/
 date: '2015-07-07'
 tags:
 - washington
