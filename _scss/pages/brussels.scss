@@ -5,13 +5,15 @@
 
   .poem {
     -webkit-column-count: 3;
-    height: 20em;
+    min-height: 20em;
     -webkit-column-gap: 2em;
     padding: 2em;
     z-index: 5;
     position: relative;
     font-family: 'Georgia', serif;
     line-height: 1.7;
+    mix-blend-mode: darken;
+    color: cornflowerblue;
 
     strong {
       float: right;
