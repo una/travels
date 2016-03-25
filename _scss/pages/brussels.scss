@@ -1,15 +1,26 @@
 @import '../shared';
 
 .brussels--page {
-  min-height: 100vh;
+  min-height: 120vh;
 
   .poem {
     -webkit-column-count: 3;
     height: 20em;
     -webkit-column-gap: 2em;
     padding: 2em;
-  }
+    z-index: 5;
+    position: relative;
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
 
+    strong {
+      float: right;
+      font-size: 1.6em;
+      display: block;
+      width: 100%;
+      text-align: right;
+    }
+  }
 }
 
 .square {
@@ -25,4 +36,13 @@
   background-position: 50% 150px;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+.square-2 {
+  @extend .square;
+  transform: rotate(-8deg) scale(1.15);
+  filter: hue-rotate(290deg);
+  z-index: 0;
+  opacity: 0.8;
+  mix-blend-mode: hard-light;
 }
