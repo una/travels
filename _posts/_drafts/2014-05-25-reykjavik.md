@@ -29,7 +29,7 @@ We were little explorers
 as we skipped along it.
 We watched the blue Geyser,
 I watched your blue eyes,
-breathed steam in lagoons &mdash;
+breathed steam in lagoons&mdash;
 drank White Russians at night.
 We saw corrugated steel
 from the tops of grey towers,

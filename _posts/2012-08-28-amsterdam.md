@@ -3,12 +3,13 @@ layout: post
 slug: amsterdam
 city: Amsterdam
 country: Netherlands
-permalink: /amsterdam
+permalink: /amsterdam/
 date: '2012-08-30'
 tags:
 - amsterdam
 - netherlands
 - 2012
+publish: true
 ---
 #Amsterdam
 
