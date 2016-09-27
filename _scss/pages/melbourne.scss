@@ -83,13 +83,9 @@
     background: #222;
     padding: 2em;
     float: left;
+    mix-blend-mode: luminosity;
 
     @include breakpoint(md) {
-      width: 50%;
-      min-height: auto;
-    }
-
-    @include breakpoint(sm) {
       width: 100%;
       float: none;
       clear: both;
@@ -104,27 +100,16 @@
       background: url('../../img/melbourne/baller-sm.jpg'), white;
     }
 
-    background-blend-mode: multiply;
-    background-position: 50%;
-    background-size: 25%;
-    width: 60%;
-    min-height: 110vh;
-    float: right;
+    width: 100%;
+    min-height: 120vh;
     animation: colorShift 40s steps(1) infinite alternate;
 
     @include breakpoint(md) {
       animation: none;
-      background-position: 50%;
-      background-size: 100%;
-      width: 50%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
       min-height: 100vh;
-    }
-
-    @include breakpoint(sm) {
-      animation: none;
-      float: none;
-      clear: both;
-      width: 100%;
     }
   }
 }
