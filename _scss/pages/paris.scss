@@ -1,9 +1,11 @@
 @import '../shared';
 
 .paris--page {
-  background: url('http://www.bourbon-paris-hotel.com/media/galerie/accueil2-hotel-3-etoiles-paris-1.jpg'), #555;
+  background: url('http://www.bourbon-paris-hotel.com/media/galerie/accueil2-hotel-3-etoiles-paris-1.jpg'), #2947e4;
   background-blend-mode: multiply;
   background-size: cover;
+  background-attachment: fixed;
+  font-family: 'David Libre', 'Open Sans', sans-serif;
 
   .border {
     display: flex;
@@ -16,10 +18,23 @@
     max-width: 940px;
     margin: 6em auto 8.5em;
     background: linear-gradient(-120deg,rgba(16, 11, 11, 0.17),#010431,rgba(90, 0, 20, 0.72));
+    position: relative;
+
+    &:after {
+      content: 'Paris, France—December 2012';
+      color:white;
+      position: absolute;
+      right: -115px;
+      top: 90px;
+      opacity: .5;
+      transform: rotate(90deg);
+      
+    }
   }
 }
 
 .large-letter {
+  font-family: 'Gravitas-One', serif;
   mix-blend-mode: exclusion;
   font-size: 20em;
   padding-right: 4rem;
@@ -35,8 +50,8 @@
 }
 
 .poem {
-  color: #d36f6f;
-  mix-blend-mode: luminosity;
+  color: #8c9ae6;
+  mix-blend-mode: exclusion;
   max-width: 28em;
   line-height: 1.8;
 }
