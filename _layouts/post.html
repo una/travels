@@ -6,9 +6,9 @@
       {% include {{page.slug}}.css %}
   </style>
 
-  <body>
+  <body class="{{page.slug}}--page">
     <div class="wrapper">
-      <div class="{{page.slug}}--page">
+      <div>
         <main role="main">
           {{content}}
         </main>
