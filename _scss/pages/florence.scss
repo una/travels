@@ -7,19 +7,16 @@
   font-style: normal;
 }
 
-.florence--page {
+.florence--page main {
     padding: 3em 3em 15em;
     background: url(../../img/florence/pontevecchio.jpg), linear-gradient(-235deg, transparent 60%,#F1E08B 60%);
     background-blend-mode: screen;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
-  main {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-  }
 
   @include breakpoint(lg) {
       align-items: center;

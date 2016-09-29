@@ -1,7 +1,9 @@
 @import '../shared';
 
 .brussels--page {
-  min-height: 120vh;
+  main { 
+    min-height: 120vh;
+  }
 
   .poem {
     -webkit-column-count: 3;

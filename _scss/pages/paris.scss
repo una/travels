@@ -1,11 +1,14 @@
 @import '../shared';
 
 .paris--page {
-  background: url('http://www.bourbon-paris-hotel.com/media/galerie/accueil2-hotel-3-etoiles-paris-1.jpg'), #2947e4;
+  background: url('../../img/paris/louvre.jpg'), #2947e4;
   background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'David Libre', 'Open Sans', sans-serif;
+
+  main {
+    font-family: 'David Libre', 'Open Sans', sans-serif;
+  }
 
   .border {
     display: flex;
@@ -41,7 +44,7 @@
   border-right: 1px solid rgba(255,255,255,.5);
   margin-right: 4rem;
   font-weight: 800;
-  background-image: url('http://static5.comicvine.com/uploads/square_medium/10/100555/3329556-the-eiffel-tower-might-be-part-of-an-upcoming-mini-world-attraction-dubai.jpg');
+  background-image: url('../../img/paris/eiffeltower.jpg');
   background-position: 0;
   background-size: contain;
   -webkit-background-clip: text;
