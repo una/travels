@@ -2,7 +2,7 @@
 
 .brussels--page {
   main { 
-    min-height: 120vh;
+    height: 120vh;
   }
 
   .poem {
@@ -14,8 +14,12 @@
     position: relative;
     font-family: 'Georgia', serif;
     line-height: 1.7;
-    mix-blend-mode: darken;
-    color: cornflowerblue;
+    transform: rotate(-9deg);
+    mix-blend-mode: luminosity;
+    background-color: rgba(255, 239, 47, 0.88);
+    color: #423232;
+    margin: 7em 4em;
+    max-width: 900px;
 
     strong {
       float: right;
@@ -39,14 +43,16 @@
   background-size: cover;
   background-position: 50% 150px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: -1;
 }
 
 .square-2 {
   @extend .square;
-  transform: rotate(-8deg) scale(1.15);
+  transform: rotate(-8deg) scale(1.15) translateY(-100px);
   filter: hue-rotate(290deg);
   z-index: 0;
   opacity: 0.8;
+  background-attachment: initial;
   mix-blend-mode: hard-light;
 }
