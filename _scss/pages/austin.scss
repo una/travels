@@ -1,0 +1,25 @@
+@import '../shared';
+
+.austin--page {
+  background-image: url('../../img/austin/sxsw.jpg');
+  background-size: cover;
+
+  main {
+    min-height: 100vh;
+    padding: 2em;
+    mix-blend-mode: luminosity;
+
+    > p {
+      width: 32em;
+      background: rgb(179, 153, 143);
+      padding: 1em;
+      line-height: 1.5;
+      font-family: 'space mono';
+      font-size: 14px;
+
+      br {
+        line-height: 3
+      }
+    }
+  }
+}

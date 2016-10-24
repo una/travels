@@ -24,7 +24,7 @@ stopped to walk on black sand,
 I traced puffin track footprints
 while you were holding my hand.
 Tectonic plates parted
-and formed quiete the rift.
+and formed quite the rift.
 We were little explorers
 as we skipped along it.
 We watched the blue Geyser,
@@ -35,7 +35,7 @@ We saw corrugated steel
 from the tops of grey towers,
 When the sun didn't sleep
 for twenty-one hours.
-That was when I could trust you
+That was when I could still trust you
 and before all your lies.
 But at least you'll have Iceland
 to remember me by.

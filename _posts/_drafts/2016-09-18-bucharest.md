@@ -11,7 +11,7 @@ tags:
 - 2016
 ---
 
-I understand this place from a distance, and so I think I can appreciate its ludicracy. Shaking my head at every turn, shaking my head at the grand, glamorous, grungy buildings. A devastated mess made of a communist ruler's wet dream. 
+I understand this place from a distance, and so I think I can appreciate its ludicracy. Shaking my head at every turn, shaking my head at the grand, glamorous, grungy buildings. A devastated mess made of a communist ruler's wet dream.
 
 Such juxtaposition.
 

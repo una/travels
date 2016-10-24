@@ -11,7 +11,7 @@ tags:
 - 2016
 ---
 
-The language barrier was real, but it was my fault. I remember trying to accomplish simple tasks&mdash;buying a sube card&mdash;two girls at the corner store trying to translate "do you want cards charge cash card." They played it aloud for the store to hear and giggled hysterically.
+The language barrier was real, but it was my fault. I remember trying to accomplish simple tasks&mdash;buying a sube card&mdash;two girls at the corner shop trying to translate "do you want cards charge cash card." They played it aloud for the whole place to hear and giggled hysterically.
 
 It rained, but I hopped from storefront to Palermo storefront and mostly just admiring. Hopping between endless buffets of meats and chimichuri. I tried to order a salad and got a meat dish with some lettuce underneath. But I found some solace and some pan de queso, in a place I'm embarrassed to admit. 
 
