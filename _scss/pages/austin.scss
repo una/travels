@@ -1,7 +1,8 @@
 @import '../shared';
 
 .austin--page {
-  background-image: url('../../img/austin/sxsw.jpg');
+  background: url('../../img/austin/sxsw.jpg'), rgb(239, 201, 115);
+  background-blend-mode: color-burn;
   background-size: cover;
 
   main {
