@@ -60,13 +60,15 @@ $box-shadow--size: 25px;
   }
 
   &__loc {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
+    line-height: 1.5;
   }
 
   &__date {
     color: $color--purple;
     text-align: center;
     display: block;
+    font-style: italic;
   }
 }

@@ -1,0 +1,60 @@
+@import '../shared';
+
+.colonia-de-sacramento--page {
+   background: url(../../img/colonia/seashore.jpg), #DDE6ED;
+    background-size: cover;
+    background-position: 33% bottom;
+    background-repeat: no-repeat;
+
+  .poem-area {
+    max-width: 600px;
+    background: url(../../img/colonia/seashore.jpg), #DDE6ED;
+    background-size: cover;
+    background-position: 44% 100px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 110vh;
+    padding: 2em;
+    mix-blend-mode: hard-light;
+  }
+
+  .poem {
+   max-width: 29em;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  br {
+    line-height: 2;
+    clear: both;
+  }
+
+  .metadata-area {
+    font-family: 'Amatic SC',cursive;
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    text-align: center;
+    right: 0;
+    font-size: 48px;
+    mix-blend-mode: color-burn;
+    color: #676373;
+
+    .city, 
+    .month {
+      display: inline;
+
+      @include breakpoint(md) {
+        display: block;
+      }
+    }
+
+    @include breakpoint(md) {
+      top: 500px;
+      left: 0;
+    }
+
+    @include breakpoint(xs) {
+      top: 600px;
+    }
+  }
+}
