@@ -1,0 +1,32 @@
+@import '../shared';
+
+.porto--page {
+  background: url('../../img/porto/IMG_5190.jpg');
+  background-position: 100%;
+  background-size: cover;
+
+  .poem {
+    display: block;
+    width: 30%;
+    min-width: 33em;
+    padding: 3em;
+    min-height: 128vh;
+    border-left: 120px solid yellow;
+    border-image: url('../../img/porto/IMG_5096.jpg') 360;
+    margin: 0 0 0 auto;
+    background-color: #fee;
+    mix-blend-mode: hard-light;
+    font-family: 'Vollkorn', serif;
+
+    @include breakpoint(xs) {
+      border-left: 60px solid yellow;
+      border-image: url('../../img/porto/IMG_5096.jpg') 230;
+      min-width: 100%;
+      padding-bottom: 8em;
+    }
+
+    br {
+      clear: both;
+    }
+  }
+}

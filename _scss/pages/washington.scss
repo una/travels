@@ -90,7 +90,7 @@
 
   .img-area {
     width: 100%;
-    height: 105vh;
+    height: 120vh;
     flex: 2;
 
     @include breakpoint(sm) {
@@ -141,7 +141,7 @@
     padding: 2em;
     width: 80%;
     max-width: 450px;
-    top: -65vh;
+    top: -80vh;
     margin: 0 auto;
     background:  $wood-color;
     position: relative;
