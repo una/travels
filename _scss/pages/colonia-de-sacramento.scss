@@ -16,6 +16,11 @@
     height: 110vh;
     padding: 2em;
     mix-blend-mode: hard-light;
+    column-count: 2;
+
+    @include breakpoint(sm) {
+      column-count: 1;
+    }
   }
 
   .poem {
