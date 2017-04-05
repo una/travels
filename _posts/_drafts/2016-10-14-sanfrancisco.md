@@ -11,8 +11,8 @@ tags:
 - 2016
 ---
 
-Brisk morning walks through fog over the marina, and I'm struggling with my sunglasses on. Brunch and basking in the sun in Dolores, driving up and down steep streets. I could never drive here -- these cars terrify me
+Brisk morning walks through fog over the marina, and I'm struggling with my sunglasses on. Brunch and basking in the sun in Dolores, driving up and down steep streets. I could never drive here -- eyes wide at the cars and hills, and streets that turn into stairs.
 
-- tram cars, rainbows on hilltop parks overlooking the city, food, so much food, and a tiki bar with a waterfall inside
+Tram cars, rainbows on hilltop parks overlooking the city, food. So much food, and a tiki bar with a waterfall inside, a wine bar with a piano, a restaurant bar where we ordered way too much food. But we made friends.
 
-san francisco is full of friends
+San Francisco is full of friends. And always a juxtaposition of fame and famine, warm and cold. And always calling itself mild, just fine.
