@@ -27,6 +27,46 @@ $box-shadow--size: 25px;
     margin: 2em .5em;
     justify-content: flex-start;
     align-items: flex-start;
+    position: relative;
+
+    &:hover {
+      .post-list__experiments {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__experiments {
+    transition-duration: .25s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    line-height: 1;
+    color: $color--offwhite;
+    padding: 1em;
+    pointer-events: none;
+    opacity: 0;
+
+    h3 {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+      font-style: normal;
+    }
+
+    li {
+      margin: .5em auto;
+      width: 6em;
+      padding: 0;
+      list-style: disc;
+      text-align: left;
+
+    }
   }
 
   &__visual {

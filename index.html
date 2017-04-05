@@ -23,7 +23,15 @@ title: Archive
           <span class="post-list__loc--city">{{ post.city }}</span>,
           <span class="post-list__loc--country">{{ post.country }}</span>
         </h2>
-        <h3 class="post-list__date"> {{ post.date | date: "%B %Y" }}</span>
+        <h3 class="post-list__date"> {{ post.date | date: "%B %Y" }}</span></h3>
+      <div class="post-list__experiments">
+        <h3>CSS Experiments:</h3>
+          <ul>
+          {% for experiment in post.experiments %}
+            <li>{{ experiment }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     </li>
     {% endif %}
   {% endfor %}
