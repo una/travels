@@ -15,6 +15,9 @@ tags:
 - seattle
 - 2015
 publish: true
+experiments:
+- Blend Modes
+- Flexbox
 ---
 
 <section class="img-area">

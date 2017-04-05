@@ -90,7 +90,6 @@
   .img {
     background-size: cover;
     background-position: 50%;
-    filter: saturate(.75);
 
     &::after {
       content: '';

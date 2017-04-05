@@ -10,6 +10,9 @@ tags:
 - croatia
 - 2014
 publish: true
+experiments:
+- Blend Modes
+- Columns
 ---
 <h1 class="city">Dubrovnik, Croatia</h1>
 
@@ -27,4 +30,3 @@ That's the last time I knew where I was going to sleep at night for a while. But
 <h2 class="date"> May 2014.
 </h2>
 </div>
-

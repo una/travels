@@ -10,6 +10,10 @@ tags:
 - australia
 - 2015
 publish: true
+experiments:
+- Blend Modes
+- Animation
+- Flexbox
 ---
 
 <div class="side-one">
