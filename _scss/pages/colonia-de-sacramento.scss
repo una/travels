@@ -1,32 +1,38 @@
 @import '../shared';
 
-.colonia-de-sacramento--page {
+.colonia-de-sacramento--page main{
    background: url(../../img/colonia/seashore.jpg), #DDE6ED;
     background-size: cover;
     background-position: 33% bottom;
     background-repeat: no-repeat;
+    min-height: 110vh;
 
   .poem-area {
-    max-width: 600px;
-    background: url(../../img/colonia/seashore.jpg), #DDE6ED;
-    background-size: cover;
-    background-position: 44% 100px;
-    background-repeat: no-repeat;
     display: block;
-    height: 110vh;
+    min-width: 30em;
+    max-width: 600px;
+    height: 100vh;
+    grid-gap: 1em;
+    text-align: center;
     padding: 2em;
-    mix-blend-mode: hard-light;
-    column-count: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, auto) 50vh;
 
-    @include breakpoint(sm) {
-      column-count: 1;
+    p {
+      font-family: 'Titillium Web', sans-serif;
+      grid-column: 1 / 4;
+      mix-blend-mode: overlay;
+      color: black;
+      font-weight: 800;
+
+      &:nth-child(2n) {
+        grid-column: 2 / 5;
+      }
     }
   }
 
-  .poem {
-   max-width: 29em;
-    font-family: 'Titillium Web', sans-serif;
-  }
+
 
   br {
     line-height: 2;
@@ -36,15 +42,15 @@
   .metadata-area {
     font-family: 'Amatic SC',cursive;
     position: absolute;
-    top: 400px;
+    top: 300px;
     left: 700px;
     text-align: center;
     right: 0;
     font-size: 48px;
-    mix-blend-mode: color-burn;
-    color: #676373;
+    mix-blend-mode: overlay;
+    color: #30559e;
 
-    .city, 
+    .city,
     .month {
       display: inline;
 
